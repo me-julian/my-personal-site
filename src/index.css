@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .hard-box-shadow-left {
+        box-shadow: -1rem 1rem var(--tw-shadow-color);
+    }
+    .hard-box-shadow-right {
+        box-shadow: 1rem 1rem var(--tw-shadow-color);
+    }
+}

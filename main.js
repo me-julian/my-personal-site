@@ -80,8 +80,9 @@ appWrapper.innerHTML = /*html*/ `
           <h6 class="text-lg mb-3">Backend</h6>
           <ul>
             <li>Node.js</li>
-            <li>Express</li>
-            <li>SQL</li>
+            <li>NPM/PNPM</li>
+            <li>Express.js</li>
+            <li>MySQL & Sequelize ORM</li>
           </ul>
         </div>
         <div class="flex-1 py-6 bg-gradient-to-r from-cyan-100 to-cyan-125 border-r border-b border-zinc-300 rounded-md shadow-md">
@@ -94,8 +95,11 @@ appWrapper.innerHTML = /*html*/ `
           </ul>
         </div>
       </div>
-      <p class="text-lg text-balance mb-6">
-        I've greatly enjoyed getting to explore these and more technologies in my journey to becoming a professional web developer. I'm even more excited to put these into action building real products amongst a team.
+      <p class="text-lg mb-6 text-balance">
+        Some other technologies I've had the pleasure of using include Scala, Python, jQuery, D3, MongoDB & Mongoose ODM, Gulp, Mocha, Chai and Sinon.
+      </p>
+      <p class="text-lg mb-6 text-balance">
+        Learning and using new tech is exciting. There are many others I'd like to try and plenty left to learn about what I already know. However, what really excites me is the prospect of putting these tools to use building real products with a team.
       </p>
     </section>
     <section id="projects" class="max-w-screen-xl my-6 mx-auto">

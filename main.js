@@ -23,7 +23,9 @@ appWrapper.innerHTML = /*html*/ `
         </svg>
       </div>
       <div class="my-6">
-        <h1 class="mb-4 text-5xl font-medium">Hi!</h1>
+        <h1 class="mb-4 text-5xl font-medium">
+          Hi!
+        </h1>
         <h2 class="text-2xl text-gray-700">
           I'm <span class="font-medium text-gray-800">Julian Edwards</span>, 
           a web developer in Austin, Texas.
@@ -31,28 +33,30 @@ appWrapper.innerHTML = /*html*/ `
       </div>
     </section>
     <section id="skills" class="my-6 mx-auto w-2/3">
-      <h3 class="text-2xl mb-6">Let me tell you a little bit about myself.</h3>
-      <h4 class="text-lg mb-3">
+      <h3 class="text-2xl mb-6">
+        Let me tell you a little bit about myself.
+      </h3>
+      <h5 class="text-lg mb-3">
         Computers were central to many of my hobbies growing up
-      </h4>
+      </h5>
       <p class="mb-6 text-balance">
         Since I got my first computer in 2011 I've had many different experiences 
         and solved many problems with computers. Whether that's learning to setup 
         and troubleshoot video game mod installations, my first dual boot Ubuntu 
         system, and yes even messing with Ruby and Java.
       </p>
-      <h4 class="text-lg mb-3">
+      <h5 class="text-lg mb-3">
         But the story didn't end there...
-      </h4>
+      </h5>
       <p class="mb-6 text-balance">
         A couple of years ago I began to pursue them professionally. With all my 
         experiences highlighting my love for learning, solving problems, tinkering 
         and creating, I decided to take the plunge and return to coding. I started 
         with Python, but suddenly was offered a unique opportunity...
       </p>
-      <h4 class="text-lg mb-3">
+      <h5 class="text-lg mb-3">
         Enter Inventive Academy
-      </h4>
+      </h5>
       <p class="mb-6 text-balance">
         I was lucky enough to be put into contact with 
         <a class="link underline" href="https://learn.inventiveacademy.io/"
@@ -101,9 +105,9 @@ appWrapper.innerHTML = /*html*/ `
           <h2 class="text-4xl font-bold">GAMES NOT PLAYED</h2>
         </div>
         <div class="flex-1 p-6 text-right rounded-md">
-          <h3 class="text-xl font-medium text-balance mb-3">
+          <h4 class="text-xl font-medium text-balance mb-3">
             Building a maintainable and fully featured app
-          </h3>
+          </h4>
           <div>
             <p class="my-2 text-balance">
               With today's digital distribution and constant sales it's easy to end up with more games than you can play. I wanted to make a simple and focused app to help me decide what to play next.
@@ -132,9 +136,9 @@ appWrapper.innerHTML = /*html*/ `
       </section>
       <section class="flex justify-stretch my-24 gap-28">
         <div class="flex-1 p-6 text-left rounded-md">
-          <h3 class="text-xl font-medium text-balance mb-3">
+          <h4 class="text-xl font-medium text-balance mb-3">
           Handling complexity and edge cases
-          </h3>
+          </h4>
           <div>
             <p class="my-2 text-balance">
               An early assignment, I was tasked with building a simulation of cars in a parking lot by scratch. Using an object-oriented approach I created recursive algorithms to get cars to and from their spaces, generate necessary turn and parking animations and handle collision aversion in both standard and edge cases.
@@ -143,8 +147,8 @@ appWrapper.innerHTML = /*html*/ `
           <div>
             <h6 class="text-lg font-medium mt-3">Key Technologies and Concepts</h6>
             <ul class="ml-8 list-disc">
-              <li>Recursion</li>
-              <li>Object Oriented Programming</li>
+            <li>Object Oriented Programming</li>
+            <li>Recursion</li>
               <li>State Machines</li>
               <li>
                 <a
@@ -168,9 +172,9 @@ appWrapper.innerHTML = /*html*/ `
           <h2 class="text-4xl font-bold">MOVIE DATABASE</h2>
         </div>
         <div class="flex-1 p-6 text-right rounded-md">
-          <h3 class="text-xl font-medium text-balance mb-3">
+          <h4 class="text-xl font-medium text-balance mb-3">
             Using real data
-          </h3>
+          </h4>
           <div>
             <p class="my-2 text-balance">
               A classic content-centered web page featuring 3rd-party data and web dev fundamentals. Client side scripting with JQuery utilizing AJAX requests and the DOM API to deliver a smooth, dynamic user experience.
@@ -189,9 +193,9 @@ appWrapper.innerHTML = /*html*/ `
       </section>
       <section class="flex justify-stretch my-24 gap-32">
       <div class="flex-1 h-96 p-6 text-left rounded-md">
-        <h3 class="text-xl font-medium text-balance">
+        <h4 class="text-xl font-medium text-balance">
           Putting CSS to the test
-        </h3>
+        </h4>
         <div>
           <p class="my-2 text-balance">
             The culmination of my learning in HTML and CSS, this is a recreation of the Jeep.com front page as of Spring 2022. While I later created the same page from scratch again using Bootstrap, this version uses only plain HTML and CSS.
@@ -211,9 +215,9 @@ appWrapper.innerHTML = /*html*/ `
       </section>
     </section>
     <section id="personal"  class="my-6 mx-auto w-2/3">
-      <h4 class="text-2xl mb-4 font-medium">
+      <h3 class="text-2xl mb-4 font-medium">
         A little more about me
-      </h4>
+      </h3>
       <p class="mb-4 text-balance">
         Software isn't the only thing I'm interested in. I love learning 
         languages (currently Dutch, previously Japanese and French), finding 
@@ -221,46 +225,46 @@ appWrapper.innerHTML = /*html*/ `
         Star Praying Mantis Kung Fu.
       </p>
       <p class="mb-4 text-balance">
-        Video games have been a constant in my life as well. I credit The Elder Scrolls III: Morrowind for my love of immersive worlds and exploration. There are few games that rival the systemic complexity and gradual, long-term building of Europa Universalis 4, which is my most played game by far. Dark Souls and Guilty Gear: Strive have their own satisfaction in the slow accumulation of skill and knowledge they engender, and the connection to martial arts helps too.
+        Video games have been a constant in my life as well. Some favorites include The Elder Scrolls III: Morrowind for its immersive world, Europa Universalis IV for its systemic complexity in gradual, long term campaigns and Dark Souls for its exploration and satisfying accumulation of skill and knowledge.
       </p>
       <p class="mb-4 text-balance">
-        I get the most satisfaction when I can use my knowledge to support others, and so am always looking for opportunities to help out and teach. Of course, sometimes the best way to take a load off of others is pure, solitary diligence too.
+        I get the most satisfaction when I can use my knowledge to support others, and so am always looking for opportunities to help out, share ideas and teach. Sometimes that aid comes in the form of solitary diligence, preparing something great you can present to others.
       </p>
     </section>
     <section id="connect" class="my-6 mx-auto w-2/3">
-      <h3 class="text-3xl mb-4 font-semibold">
+      <h2 class="text-3xl mb-4 font-semibold">
         Reach out!
-      </h3>
-      <h4 class="text-xl mb-4 text-balance">
+      </h2>
+      <h5 class="text-lg mb-4 text-balance">
         Interested in my projects? Want to see some of the many others I've completed, or just chat?
-      </h4>
+      </h5>
       <h4 class="text-lg mb-4 text-balance">
         Connect with me on LinkedIn below, or send an email to 
         <a
           class="link underline"
-          href="mailto: julian.michael.edwards+inquiries@gmail.com"
-          >julian.michael.edwards+inquiries@gmail.com
+          href="mailto: julian.michael.edwards+dev@gmail.com"
+          >julian.michael.edwards+dev@gmail.com
         </a>
-      </h4>
+      </h5>
       <h4 class="text-lg text-balance">
         I've also been a regular attendee of the 
         <a
           class="link underline"
-          href="(https://www.meetup.com/austin-code-mentorship/)"
+          href="https://www.meetup.com/austin-code-mentorship/"
         >Austin Code Mentorship</a> monthly meetup since March, 2023. Come by 
         and you'll probably see me there!
-      </h4>
-      <div class="my-8">
-        <a class="inline-block m-6 link underline drop-shadow-md" href="https://www.linkedin.com/in/julian-edwards/">
+      </h5>
+    </section>
+    <footer class="mt-12 pb-8 text-cyan-50 bg-cyan-500">
+      <div class="py-8">
+        <a class="inline-block m-6 link light underline drop-shadow-md" href="https://www.linkedin.com/in/julian-edwards/">
           ${linkedinSvg('h-16 w-16')}
         </a>
-        <a class="inline-block m-6 link underline drop-shadow-md" href="https://github.com/julianmedwards">
+        <a class="inline-block m-6 link light underline drop-shadow-md" href="https://github.com/julianmedwards">
           ${githubSvg('h-16 w-16')}
         </a>
       </div>
-    </section>
-    <footer class="mt-12 mb-8">
-      <p class="font-sm font-light">Built with Vite and Tailwind.</p>
+      <h6 class="font-sm font-light">Built with Vite and Tailwind.</h6>
     </footer>
   </main>
 `

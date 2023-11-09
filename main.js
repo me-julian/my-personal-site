@@ -60,8 +60,9 @@ appWrapper.innerHTML = /*html*/ `
         stack web development course, now all-online courtesy of COVID-19.
       </p>
       <h3 class="text-2xl mb-6">Let's take a look at what I've learned</h3>
-      <div class="flex justify-around gap-x-8 my-6 mx-6 p-6 bg-zinc-200 rounded-sm">
-        <div class="flex-1 py-6 bg-zinc-100 border-r border-b border-zinc-300 rounded-md shadow-sm">
+      <div class="flex justify-around gap-x-8 my-6 mx-6 p-6 bg-slate-200 rounded-sm">
+        <div
+          class="flex-1 py-6 bg-gradient-to-r from-cyan-50 to-cyan-100 border-r border-b border-zinc-300 rounded-md shadow-md">
           <h6 class="text-lg mb-3">Frontend</h6>
           <ul>
             <li>HTML</li>
@@ -71,7 +72,7 @@ appWrapper.innerHTML = /*html*/ `
             <li>Vite</li>
           </ul>
         </div>
-        <div class="flex-1 py-6 bg-zinc-100 border-r border-b border-zinc-300 rounded-md shadow-sm">
+        <div class="flex-1 py-6 bg-cyan-100 border-r border-b border-zinc-300 rounded-md shadow-md">
           <h6 class="text-lg mb-3">Backend</h6>
           <ul>
             <li>Node.js</li>
@@ -79,7 +80,7 @@ appWrapper.innerHTML = /*html*/ `
             <li>SQL</li>
           </ul>
         </div>
-        <div class="flex-1 py-6 bg-zinc-100 border-r border-b border-zinc-300 rounded-md shadow-sm">
+        <div class="flex-1 py-6 bg-gradient-to-r from-cyan-100 to-cyan-125 border-r border-b border-zinc-300 rounded-md shadow-md">
           <h6 class="text-lg mb-3">Infrastructure</h6>
           <ul>
             <li>Docker</li>

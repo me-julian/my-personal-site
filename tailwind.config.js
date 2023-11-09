@@ -5,16 +5,17 @@ export default {
         fontFamily: {
             sans: ['Ubuntu', 'Helvetica', 'Arial', 'sans-serif'],
         },
-        backgroundImage: {
-            'parking-lot': "url('/img/parkinglot.jpg')",
-        },
         extend: {
+            backgroundImage: {
+                'parking-lot': "url('/img/parkinglot.jpg')",
+            },
             colors: {
                 'games-not-played': {
                     primary: '#3b5249',
                     'bg-0': '#141314',
                     light: '#e6fffbfa',
                 },
+                'cyan-125': '#aef4fc',
             },
         },
     },

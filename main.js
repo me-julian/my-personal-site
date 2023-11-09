@@ -1,5 +1,7 @@
 import './src/index.css'
 import jeLogoSvg from './src/je-logo-svg'
+import githubSvg from './src/github-svg'
+import linkedinSvg from './src/linkedin-svg'
 
 const appWrapper = document.querySelector('#app')
 
@@ -248,11 +250,15 @@ appWrapper.innerHTML = /*html*/ `
         and you'll probably see me there!
       </h4>
       <div class="my-8">
-        <a class="link underline" href="https://www.linkedin.com/in/julian-edwards/">LinkedIn</a>
-        <a class="link underline" href="https://github.com/julianmedwards">Github</a>
+        <a class="inline-block m-6 link underline drop-shadow-md" href="https://www.linkedin.com/in/julian-edwards/">
+          ${linkedinSvg('h-16 w-16')}
+        </a>
+        <a class="inline-block m-6 link underline drop-shadow-md" href="https://github.com/julianmedwards">
+          ${githubSvg('h-16 w-16')}
+        </a>
       </div>
     </section>
-    <footer class="mt-20 mb-6">
+    <footer class="mt-12 mb-8">
       <p class="font-sm font-light">Built with Vite and Tailwind.</p>
     </footer>
   </main>

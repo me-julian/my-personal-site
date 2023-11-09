@@ -15,52 +15,50 @@ appWrapper.innerHTML = /*html*/ `
   <main class="min-w-full">
     <section id="intro" class="my-6">
       <div class="relative inline-block my-4">
-        <img src="/img/julianeportrait.jpg" class="rounded-full h-36 w-36">
+        <img src="/img/julianeportrait.jpg" class="rounded-full h-36 w-36 drop-shadow-lg">
         <svg class="absolute inline-block -right-3 -bottom-4 h-16 w-16 text-cyan-500 drop-shadow-lg">
           ${jeLogoSvg}
         </svg>
       </div>
-      <div class="my-4">
-        <h1 class="m-3 text-5xl font-medium">Hi!</h1>
+      <div class="my-6">
+        <h1 class="mb-4 text-5xl font-medium">Hi!</h1>
         <h2 class="text-2xl text-gray-700">
-          I'm <span class="font-medium text-gray-800">
-            Julian Edwards
-          </span>
-          , a web developer in Austin, Texas.
+          I'm <span class="font-medium text-gray-800">Julian Edwards</span>, 
+          a web developer in Austin, Texas.
         </h2>
       </div>
     </section>
     <section id="skills" class="my-6 mx-auto w-2/3">
-      <h3 class="text-2xl mb-4">Let me tell you a little bit about myself.</h3>
-      <h4 class="text-lg mb-2">
+      <h3 class="text-2xl mb-6">Let me tell you a little bit about myself.</h3>
+      <h4 class="text-lg mb-3">
         Computers were central to many of my hobbies growing up
       </h4>
-      <p class="mb-4 text-balance">
+      <p class="mb-6 text-balance">
         Since I got my first computer in 2011 I've had many different experiences 
         and solved many problems with computers. Whether that's learning to setup 
         and troubleshoot video game mod installations, my first dual boot Ubuntu 
         system, and yes even messing with Ruby and Java.
       </p>
-      <h4 class="text-lg mb-2">
+      <h4 class="text-lg mb-3">
         But the story didn't end there...
       </h4>
-      <p class="mb-4 text-balance">
+      <p class="mb-6 text-balance">
         A couple of years ago I began to pursue them professionally. With all my 
         experiences highlighting my love for learning, solving problems, tinkering 
         and creating, I decided to take the plunge and return to coding. I started 
         with Python, but suddenly was offered a unique opportunity...
       </p>
-      <h4 class="text-lg mb-2">
+      <h4 class="text-lg mb-3">
         Enter Inventive Academy
       </h4>
-      <p class="mb-4 text-balance">
+      <p class="mb-6 text-balance">
         I was lucky enough to be put into contact with 
         <a class="link underline" href="https://learn.inventiveacademy.io/"
         >Inventive</a> who were looking for volunteers to trial run their full 
-        stack web development course, now all-online courtesy of Covid-19.
+        stack web development course, now all-online courtesy of COVID-19.
       </p>
-      <h3 class="text-2xl mb-2">Let's take a look at what I've learned</h3>
-      <div class="flex justify-around gap-x-8 m-4 p-6 bg-zinc-200 rounded-sm">
+      <h3 class="text-2xl mb-6">Let's take a look at what I've learned</h3>
+      <div class="flex justify-around gap-x-8 my-6 mx-6 p-6 bg-zinc-200 rounded-sm">
         <div class="flex-1 py-6 bg-zinc-100 border-r border-b border-zinc-300 rounded-md shadow-sm">
           <h6 class="text-lg mb-3">Frontend</h6>
           <ul>
@@ -89,18 +87,18 @@ appWrapper.innerHTML = /*html*/ `
           </ul>
         </div>
       </div>
-      <p class="text-lg text-balance">
+      <p class="text-lg text-balance mb-6">
         I've greatly enjoyed getting to explore these and more technologies in my journey to becoming a professional web developer. I'm even more excited to put these into action building real products amongst a team.
       </p>
     </section>
     <section id="projects" class="max-w-screen-xl my-6 mx-auto">
-      <h2 class="text-3xl my-4 font-medium">So what's that really look like?</h2>
+      <h2 class="text-3xl mb-6 font-medium">So what's that really look like?</h2>
       <section class="flex justify-stretch mt-12 mb-24 gap-28">
         <div class="flex-1 h-96 p-6 bg-games-not-played-bg-0 text-games-not-played-light rounded-xl hard-box-shadow-left shadow-games-not-played-primary drop-shadow-xl">
           <h2 class="text-4xl font-bold">GAMES NOT PLAYED</h2>
         </div>
         <div class="flex-1 p-6 text-right rounded-md">
-          <h3 class="text-xl font-medium text-balance">
+          <h3 class="text-xl font-medium text-balance mb-3">
             Building a maintainable and fully featured app
           </h3>
           <div>
@@ -114,7 +112,7 @@ appWrapper.innerHTML = /*html*/ `
               My primary focus was to create a well rounded app with consistent custom CSS styling, working user authentication, and proper web hosting. I also integrated VS Code development containers and a continuous delivery workflow with Github Actions and Amazon Web services.
             </p>
             <div>
-              <h6 class="text-lg font-medium">Key Technologies and Concepts</h6>
+              <h6 class="text-lg font-medium mt-3">Key Technologies and Concepts</h6>
               <ul class="mr-8 list-disc-right">
                 <li>Typescript</li>
                 <li>React</li>
@@ -131,7 +129,7 @@ appWrapper.innerHTML = /*html*/ `
       </section>
       <section class="flex justify-stretch my-24 gap-28">
         <div class="flex-1 p-6 text-left rounded-md">
-          <h3 class="text-xl font-medium text-balance">
+          <h3 class="text-xl font-medium text-balance mb-3">
           Handling complexity and edge cases
           </h3>
           <div>
@@ -140,7 +138,7 @@ appWrapper.innerHTML = /*html*/ `
             </p>
           </div>
           <div>
-            <h6 class="text-lg font-medium">Key Technologies and Concepts</h6>
+            <h6 class="text-lg font-medium mt-3">Key Technologies and Concepts</h6>
             <ul class="ml-8 list-disc">
               <li>Recursion</li>
               <li>Object Oriented Programming</li>
@@ -167,7 +165,7 @@ appWrapper.innerHTML = /*html*/ `
           <h2 class="text-4xl font-bold">MOVIE DATABASE</h2>
         </div>
         <div class="flex-1 p-6 text-right rounded-md">
-          <h3 class="text-xl font-medium text-balance">
+          <h3 class="text-xl font-medium text-balance mb-3">
             Using real data
           </h3>
           <div>
@@ -176,7 +174,7 @@ appWrapper.innerHTML = /*html*/ `
             </p>
           </div>
           <div>
-            <h6 class="text-lg font-medium">Key Technologies and Concepts</h6>
+            <h6 class="text-lg font-medium mt-3">Key Technologies and Concepts</h6>
             <ul class="mr-8 list-disc-right">
               <li>JQuery</li>
               <li>Bootstrap</li>
@@ -197,7 +195,7 @@ appWrapper.innerHTML = /*html*/ `
           </p>
         </div>
         <div>
-          <h6 class="text-lg font-medium">Key Technologies and Concepts</h6>
+          <h6 class="text-lg font-medium mt-3">Key Technologies and Concepts</h6>
           <ul class="ml-8 list-disc">
             <li>CSS</li>
             <li>Responsive Layouts</li>
@@ -210,21 +208,27 @@ appWrapper.innerHTML = /*html*/ `
       </section>
     </section>
     <section id="personal"  class="my-6 mx-auto w-2/3">
-      <h4 class="text-2xl mb-4">A little more about me</h4>
-      <p class="mb-8 text-balance">
+      <h4 class="text-2xl mb-4 font-medium">
+        A little more about me
+      </h4>
+      <p class="mb-4 text-balance">
         Software isn't the only thing I'm interested in. I love learning 
         languages (currently Dutch, previously Japanese and French), finding 
         and curating new music, cooking, reading and have a black belt in 7 
         Star Praying Mantis Kung Fu.
       </p>
-      <p class="mb-8 text-balance">
+      <p class="mb-4 text-balance">
         Video games have been a constant in my life as well. I credit The Elder Scrolls III: Morrowind for my love of immersive worlds and exploration. There are few games that rival the systemic complexity and gradual, long-term building of Europa Universalis 4, which is my most played game by far. Dark Souls and Guilty Gear: Strive have their own satisfaction in the slow accumulation of skill and knowledge they engender, and the connection to martial arts helps too.
       </p>
-      <p class="mb-8 text-balance">
+      <p class="mb-4 text-balance">
         I get the most satisfaction when I can use my knowledge to support others, and so am always looking for opportunities to help out and teach. Of course, sometimes the best way to take a load off of others is pure, solitary diligence too.
       </p>
-      <h3 class="text-3xl mb-4 font-semibold">Reach out!</h3>
-      <h4 class="text-xl mb-2 text-balance">
+    </section>
+    <section id="connect" class="my-6 mx-auto w-2/3">
+      <h3 class="text-3xl mb-4 font-semibold">
+        Reach out!
+      </h3>
+      <h4 class="text-xl mb-4 text-balance">
         Interested in my projects? Want to see some of the many others I've completed, or just chat?
       </h4>
       <h4 class="text-lg mb-4 text-balance">

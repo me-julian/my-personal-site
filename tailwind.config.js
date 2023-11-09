@@ -2,6 +2,12 @@
 export default {
     content: ['./index.html', './main.js', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
+        fontFamily: {
+            sans: ['Ubuntu', 'Helvetica', 'Arial', 'sans-serif'],
+        },
+        backgroundImage: {
+            'parking-lot': "url('/img/parkinglot.jpg')",
+        },
         extend: {
             colors: {
                 'games-not-played': {

@@ -3,10 +3,28 @@
 @tailwind utilities;
 
 @layer utilities {
+    .link {
+        @apply text-cyan-500 hover:text-cyan-700 active:text-cyan-500 transition-colors;
+    }
     .hard-box-shadow-left {
         box-shadow: -1rem 1rem var(--tw-shadow-color);
     }
     .hard-box-shadow-right {
         box-shadow: 1rem 1rem var(--tw-shadow-color);
+    }
+    .text-balance {
+        text-wrap: balance;
+    }
+    .list-disc-right > li {
+        position: relative;
+
+        &::after {
+            @apply absolute block bg-black rounded-full;
+            content: '';
+            right: -1rem;
+            top: 45%;
+            width: 5px;
+            height: 5px;
+        }
     }
 }

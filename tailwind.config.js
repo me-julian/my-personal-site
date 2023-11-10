@@ -8,6 +8,9 @@ export default {
         extend: {
             backgroundImage: {
                 'parking-lot': "url('/img/parkinglot.jpg')",
+                'games-not-played': "url('/img/games-not-played.png')",
+                'movie-db': "url('/img/movie-db.png')",
+                'jeep-com': "url('/img/jeep-com.png')",
             },
             colors: {
                 'games-not-played': {
@@ -16,6 +19,12 @@ export default {
                     light: '#e6fffbfa',
                 },
                 'cyan-125': '#aef4fc',
+            },
+            dropShadow: {
+                'xl-left': [
+                    '-6px 20px 13px rgb(0 0 0 / 0.03)',
+                    '-6px 8px 5px rgb(0 0 0 / 0.08)',
+                ],
             },
         },
     },

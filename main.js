@@ -105,9 +105,12 @@ appWrapper.innerHTML = /*html*/ `
     <section id="projects" class="max-w-screen-xl my-6 mx-auto">
       <h2 class="text-3xl mb-6 font-medium">So what's that really look like?</h2>
       <section class="flex justify-stretch mt-12 mb-24 gap-28">
-        <div class="flex-1 h-96 p-6 bg-games-not-played-bg-0 text-games-not-played-light rounded-xl hard-box-shadow-left shadow-games-not-played-primary drop-shadow-xl">
-          <h2 class="text-4xl font-bold">GAMES NOT PLAYED</h2>
-        </div>
+       <a class="flex-1 h-96" href="https://gamesnotplayed.mejulian.dev/">
+          <div class="overflow-clip h-96 pt-6 bg-games-not-played-bg-0 text-games-not-played-light rounded-xl hard-box-shadow-left shadow-games-not-played-primary drop-shadow-xl">
+            <h2 class="text-4xl pb-6 font-bold">GAMES NOT PLAYED</h2>
+            <div class="relative w-full h-full bg-games-not-played bg-cover"></div>
+          </div>
+        </a>
         <div class="flex-1 p-6 text-right rounded-md">
           <h4 class="text-xl font-medium text-balance mb-3">
             Building a maintainable and fully featured app
@@ -164,30 +167,35 @@ appWrapper.innerHTML = /*html*/ `
             </ul>
           </div>
         </div>
-        <div class="flex-1 overflow-clip h-96 pt-6 bg-zinc-400 text-white rounded-xl hard-box-shadow-right shadow-orange-600 drop-shadow-xl">
-          <h2 class="text-4xl pb-6 font-bold">PARKING LOT SIMULATION</h2>
-          <div class="relative w-full h-full bg-parking-lot">
-          <img src="/img/car-orange.png" class="rotate-180 absolute scale-90 left-5 top-5" />
+        <a class="flex-1 h-96" href="https://julianmedwards.github.io/visual-parking-lot/">
+          <div class="overflow-clip h-96 pt-6 bg-zinc-400 text-white rounded-xl hard-box-shadow-right shadow-orange-600 drop-shadow-xl-left">
+            <h2 class="text-4xl pb-6 font-bold">PARKING LOT SIMULATION</h2>
+            <div class="relative w-full h-full bg-parking-lot">
+              <img src="/img/car-orange.png" class="rotate-180 absolute scale-90 left-5 top-5" />
+            </div>
           </div>
-        </div>
+        </a>
       </section>
       <section class="flex justify-stretch my-24 gap-28">
-        <div class="flex-1 h-96 p-6 bg-zinc-500 text-white rounded-xl hard-box-shadow-left shadow-blue-800 drop-shadow-xl">
-          <h2 class="text-4xl font-bold">MOVIE DATABASE</h2>
-        </div>
+        <a class="flex-1 h-96" href="https://julianmedwards.github.io/movie-db/">
+          <div class="overflow-clip h-96 pt-6 bg-zinc-400 text-white rounded-xl hard-box-shadow-left shadow-blue-800 drop-shadow-xl">
+            <h2 class="text-4xl pb-6 font-bold">MOVIE DATABASE</h2>
+            <div class="relative w-full h-full bg-movie-db bg-cover"></div>
+          </div>
+        </a>
         <div class="flex-1 p-6 text-right rounded-md">
           <h4 class="text-xl font-medium text-balance mb-3">
             Using real data
           </h4>
           <div>
             <p class="my-2 text-balance">
-              A classic content-centered web page featuring 3rd-party data and web dev fundamentals. Client side scripting with JQuery utilizing AJAX requests and the DOM API to deliver a smooth, dynamic user experience.
+              A classic content-centered web page featuring 3rd-party data and web dev fundamentals. Client side scripting with jQuery utilizing AJAX requests and the DOM API to deliver a smooth, dynamic user experience.
             </p>
           </div>
           <div>
             <h6 class="text-lg font-medium mt-3">Key Technologies and Concepts</h6>
             <ul class="mr-8 list-disc-right">
-              <li>JQuery</li>
+              <li>jQuery</li>
               <li>Bootstrap</li>
               <li>3rd Party API Usage</li>
               <li>Promises and Callbacks</li>
@@ -213,9 +221,12 @@ appWrapper.innerHTML = /*html*/ `
           </ul>
         </div>
       </div>
-        <div class="flex-1 h-96 p-6 bg-zinc-900 text-white rounded-xl hard-box-shadow-right shadow-yellow-500 drop-shadow-xl">
-          <h2 class="text-4xl font-bold">JEEP.COM RECREATION</h2>
+      <a class="flex-1 h-96" href="https://julianmedwards.github.io/jeep-com-no-bs/">
+        <div class="overflow-clip h-96 pt-6 bg-zinc-900 text-white rounded-xl hard-box-shadow-right shadow-yellow-500 drop-shadow-xl-left">
+          <h2 class="text-4xl pb-6 font-bold">JEEP.COM RECREATION</h2>
+          <div class="relative w-full h-full bg-jeep-com bg-cover"></div>
         </div>
+      </a>
       </section>
     </section>
     <section id="personal"  class="my-6 mx-auto w-2/3">

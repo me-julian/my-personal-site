@@ -5,17 +5,10 @@ import linkedinSvg from './src/linkedin-svg'
 
 const appWrapper = document.querySelector('#app')
 
-appWrapper.classList.add(
-    'min-w-full',
-    'min-h-screen',
-    'flex',
-    'text-center',
-    'justify-center',
-    'm-0'
-)
+appWrapper.classList.add('text-center', 'm-0')
 appWrapper.innerHTML = /*html*/ `
-  <main class="min-w-full">
-    <section id="intro" class="my-6">
+  <main>
+    <section id="intro" class="m-6">
       <div class="relative inline-block my-4">
         <img src="/img/julianeportrait.jpg" class="rounded-full h-36 w-36 drop-shadow-lg">
         <svg class="absolute inline-block -right-3 -bottom-4 h-16 w-16 text-cyan-500 drop-shadow-lg">
@@ -31,44 +24,45 @@ appWrapper.innerHTML = /*html*/ `
           a web developer in Austin, Texas.
         </h2>
       </div>
+      <div class="max-sm:text-left md:mx-auto md:w-2/3">
+        <h3 class="text-center text-2xl mb-6">
+          Let me tell you a little bit about myself.
+        </h3>
+        <h5 class="text-lg mb-3">
+          Computers were central to many of my hobbies growing up
+        </h5>
+        <p class="mb-6 text-balance">
+          Since I got my first computer in 2011 I've had many different experiences 
+          and solved many problems with computers. Whether that's learning to setup 
+          and troubleshoot video game mod installations, my first dual boot Ubuntu 
+          system, and yes even messing with Ruby and Java.
+        </p>
+        <h5 class="text-lg mb-3">
+          But the story didn't end there...
+        </h5>
+        <p class="mb-6 text-balance">
+          A couple of years ago I began to pursue them professionally. With all my 
+          experiences highlighting my love for learning, solving problems, tinkering 
+          and creating, I decided to take the plunge and return to coding. I started 
+          with Python, but suddenly was offered a unique opportunity...
+        </p>
+        <h5 class="text-lg mb-3">
+          Enter Inventive Academy
+        </h5>
+        <p class="mb-6 text-balance">
+          I was lucky enough to be put into contact with 
+          <a class="link underline" href="https://learn.inventiveacademy.io/"
+          >Inventive</a> who were looking for volunteers to trial run their full 
+          stack web development course, now all-online courtesy of COVID-19.
+        </p>
+      </div>
     </section>
-    <section id="skills" class="my-6 mx-auto w-2/3">
-      <h3 class="text-2xl mb-6">
-        Let me tell you a little bit about myself.
-      </h3>
-      <h5 class="text-lg mb-3">
-        Computers were central to many of my hobbies growing up
-      </h5>
-      <p class="mb-6 text-balance">
-        Since I got my first computer in 2011 I've had many different experiences 
-        and solved many problems with computers. Whether that's learning to setup 
-        and troubleshoot video game mod installations, my first dual boot Ubuntu 
-        system, and yes even messing with Ruby and Java.
-      </p>
-      <h5 class="text-lg mb-3">
-        But the story didn't end there...
-      </h5>
-      <p class="mb-6 text-balance">
-        A couple of years ago I began to pursue them professionally. With all my 
-        experiences highlighting my love for learning, solving problems, tinkering 
-        and creating, I decided to take the plunge and return to coding. I started 
-        with Python, but suddenly was offered a unique opportunity...
-      </p>
-      <h5 class="text-lg mb-3">
-        Enter Inventive Academy
-      </h5>
-      <p class="mb-6 text-balance">
-        I was lucky enough to be put into contact with 
-        <a class="link underline" href="https://learn.inventiveacademy.io/"
-        >Inventive</a> who were looking for volunteers to trial run their full 
-        stack web development course, now all-online courtesy of COVID-19.
-      </p>
+    <section id="skills" class="my-6 mx-6 md:mx-auto md:w-2/3">
       <h3 class="text-2xl mb-6">Let's take a look at what I've learned</h3>
-      <div class="flex justify-around gap-x-8 my-6 mx-6 p-6 bg-slate-200 rounded-sm">
-        <div
-          class="flex-1 py-6 bg-gradient-to-r from-cyan-50 to-cyan-100 border-r border-b border-zinc-300 rounded-md shadow-md">
-          <h6 class="text-lg mb-3">Frontend</h6>
-          <ul>
+      <div class="flex flex-col lg:flex-row justify-around gap-8 my-6 sm:mx-6 p-6 bg-slate-200 rounded-sm">
+        <div class="flex-1 py-6 bg-gradient-to-b sm:bg-gradient-to-r from-cyan-50 to-cyan-100 border-r border-b border-zinc-300 rounded-md shadow-md">
+          <h6 class="text-lg mb-3 mx-2">Frontend</h6>
+          <ul class="mx-2">
             <li>HTML</li>
             <li>CSS</li>
             <li>Javascript/Typescript</li>
@@ -85,7 +79,7 @@ appWrapper.innerHTML = /*html*/ `
             <li>MySQL & Sequelize ORM</li>
           </ul>
         </div>
-        <div class="flex-1 py-6 bg-gradient-to-r from-cyan-100 to-cyan-125 border-r border-b border-zinc-300 rounded-md shadow-md">
+        <div class="flex-1 py-6 bg-gradient-to-b sm:bg-gradient-to-r from-cyan-100 to-cyan-125 border-r border-b border-zinc-300 rounded-md shadow-md">
           <h6 class="text-lg mb-3">Infrastructure</h6>
           <ul>
             <li>Docker</li>
@@ -95,23 +89,24 @@ appWrapper.innerHTML = /*html*/ `
           </ul>
         </div>
       </div>
-      <p class="text-lg mb-6 text-balance">
+      <p class="max-sm:text-left text-lg mb-6 text-balance">
         Some other technologies I've had the pleasure of using include Scala, Python, jQuery, D3, MongoDB & Mongoose ODM, Gulp, Mocha, Chai and Sinon.
       </p>
-      <p class="text-lg mb-6 text-balance">
+      <p class="max-sm:text-left text-lg mb-6 text-balance">
         Learning and using new tech is exciting. There are many others I'd like to try and plenty left to learn about what I already know. However, what really excites me is the prospect of putting these tools to use building real products with a team.
       </p>
     </section>
     <section id="projects" class="max-w-screen-xl my-6 mx-auto">
       <h2 class="text-3xl mb-6 font-medium">So what's that really look like?</h2>
-      <section class="flex justify-stretch mt-12 mb-24 gap-28">
-       <a class="flex-1 h-96" href="https://gamesnotplayed.mejulian.dev/">
-          <div class="overflow-clip h-96 pt-6 bg-games-not-played-bg-0 text-games-not-played-light rounded-xl hard-box-shadow-left shadow-games-not-played-primary drop-shadow-xl">
-            <h2 class="text-4xl pb-6 font-bold">GAMES NOT PLAYED</h2>
-            <div class="relative w-full h-full bg-games-not-played bg-cover"></div>
+      <section class="flex flex-col md:flex-row lg:mt-12 mb-6 lg:mb-24 lg:gap-28">
+       <a class="flex-1 sm:m-6" href="https://gamesnotplayed.mejulian.dev/">
+          <div class="overflow-clip bg-games-not-played-bg-0 text-games-not-played-light sm:rounded-xl sm:hard-box-shadow-left sm:shadow-games-not-played-primary drop-shadow-xl">
+            <h2 class="text-4xl px-2 py-6 font-bold ">GAMES NOT PLAYED</h2>
+            <img class="max-lg:hidden" src="/img/projects/games-not-played-md.png" />
+            <img class="lg:hidden" src="/img/projects/games-not-played-sm.png" />
           </div>
         </a>
-        <div class="flex-1 p-6 text-right rounded-md">
+        <div class="flex-1 m-6 text-left lg:text-right rounded-md">
           <h4 class="text-xl font-medium text-balance mb-3">
             Building a maintainable and fully featured app
           </h4>
@@ -127,7 +122,7 @@ appWrapper.innerHTML = /*html*/ `
             </p>
             <div>
               <h6 class="text-lg font-medium mt-3">Key Technologies and Concepts</h6>
-              <ul class="mr-8 list-disc-right">
+              <ul class="max-lg:ml-8 max-lg:list-disc lg:mr-8 lg:list-disc-right">
                 <li>Typescript</li>
                 <li>React</li>
                 <li>User Authentication</li>
@@ -141,8 +136,8 @@ appWrapper.innerHTML = /*html*/ `
           </div>
         </div>
       </section>
-      <section class="flex justify-stretch my-24 gap-28">
-        <div class="flex-1 p-6 text-left rounded-md">
+      <section class="flex flex-col-reverse md:flex-row my-6 lg:my-24 lg:gap-28">
+        <div class="flex-1 m-6 text-left rounded-md">
           <h4 class="text-xl font-medium text-balance mb-3">
           Handling complexity and edge cases
           </h4>
@@ -167,23 +162,24 @@ appWrapper.innerHTML = /*html*/ `
             </ul>
           </div>
         </div>
-        <a class="flex-1 h-96" href="https://julianmedwards.github.io/visual-parking-lot/">
-          <div class="overflow-clip h-96 pt-6 bg-zinc-400 text-white rounded-xl hard-box-shadow-right shadow-orange-600 drop-shadow-xl-left">
-            <h2 class="text-4xl pb-6 font-bold">PARKING LOT SIMULATION</h2>
+        <a class="flex-1 h-96 sm:m-6" href="https://julianmedwards.github.io/visual-parking-lot/">
+          <div class="overflow-clip h-96 bg-zinc-400 text-white sm:rounded-xl sm:hard-box-shadow-right sm:shadow-orange-600 drop-shadow-xl-left">
+            <h2 class="text-4xl py-6 px-2 font-bold">PARKING LOT SIMULATION</h2>
             <div class="relative w-full h-full bg-parking-lot">
-              <img src="/img/car-orange.png" class="rotate-180 absolute scale-90 left-5 top-5" />
+              <img src="/img/projects/car-orange.png" class="rotate-180 absolute scale-90 left-5 top-5" />
             </div>
           </div>
         </a>
       </section>
-      <section class="flex justify-stretch my-24 gap-28">
-        <a class="flex-1 h-96" href="https://julianmedwards.github.io/movie-db/">
-          <div class="overflow-clip h-96 pt-6 bg-zinc-400 text-white rounded-xl hard-box-shadow-left shadow-blue-800 drop-shadow-xl">
-            <h2 class="text-4xl pb-6 font-bold">MOVIE DATABASE</h2>
-            <div class="relative w-full h-full bg-movie-db bg-cover"></div>
+      <section class="flex flex-col md:flex-row my-6 lg:my-24 lg:gap-28">
+        <a class="flex-1 sm:m-6" href="https://julianmedwards.github.io/movie-db/">
+          <div class="overflow-clip bg-zinc-400 text-white sm:rounded-xl sm:hard-box-shadow-left sm:shadow-blue-800 drop-shadow-xl">
+            <h2 class="text-4xl py-6 px-2 font-bold">MOVIE DATABASE</h2>
+              <img class="max-lg:hidden" src="/img/projects/movie-db-md.png" />
+              <img class="lg:hidden" src="/img/projects/movie-db-sm.png" />
           </div>
         </a>
-        <div class="flex-1 p-6 text-right rounded-md">
+        <div class="flex-1 m-6 text-left lg:text-right rounded-md">
           <h4 class="text-xl font-medium text-balance mb-3">
             Using real data
           </h4>
@@ -194,7 +190,7 @@ appWrapper.innerHTML = /*html*/ `
           </div>
           <div>
             <h6 class="text-lg font-medium mt-3">Key Technologies and Concepts</h6>
-            <ul class="mr-8 list-disc-right">
+            <ul class="max-lg:ml-8 max-lg:list-disc lg:mr-8 lg:list-disc-right">
               <li>jQuery</li>
               <li>Bootstrap</li>
               <li>3rd Party API Usage</li>
@@ -203,33 +199,34 @@ appWrapper.innerHTML = /*html*/ `
           </div>
         </div>
       </section>
-      <section class="flex justify-stretch my-24 gap-32">
-      <div class="flex-1 h-96 p-6 text-left rounded-md">
-        <h4 class="text-xl font-medium text-balance">
-          Putting CSS to the test
-        </h4>
-        <div>
-          <p class="my-2 text-balance">
-            The culmination of my learning in HTML and CSS, this is a recreation of the Jeep.com front page as of Spring 2022. While I later created the same page from scratch again using Bootstrap, this version uses only plain HTML and CSS.
-          </p>
+      <section class="flex flex-col-reverse md:flex-row my-6 lg:my-24 lg:gap-28">
+        <div class="flex-1 m-6 text-left rounded-md">
+          <h4 class="text-xl font-medium text-balance">
+            Putting CSS to the test
+          </h4>
+          <div>
+            <p class="my-2 text-balance">
+              The culmination of my learning in HTML and CSS, this is a recreation of the Jeep.com front page as of Spring 2022. While I later created the same page from scratch again using Bootstrap, this version uses only plain HTML and CSS.
+            </p>
+          </div>
+          <div>
+            <h6 class="text-lg font-medium mt-3">Key Technologies and Concepts</h6>
+            <ul class="ml-8 list-disc">
+              <li>CSS</li>
+              <li>Responsive Layouts</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h6 class="text-lg font-medium mt-3">Key Technologies and Concepts</h6>
-          <ul class="ml-8 list-disc">
-            <li>CSS</li>
-            <li>Responsive Layouts</li>
-          </ul>
-        </div>
-      </div>
-      <a class="flex-1 h-96" href="https://julianmedwards.github.io/jeep-com-no-bs/">
-        <div class="overflow-clip h-96 pt-6 bg-zinc-900 text-white rounded-xl hard-box-shadow-right shadow-yellow-500 drop-shadow-xl-left">
-          <h2 class="text-4xl pb-6 font-bold">JEEP.COM RECREATION</h2>
-          <div class="relative w-full h-full bg-jeep-com bg-cover"></div>
-        </div>
-      </a>
+        <a class="flex-1 sm:m-6" href="https://julianmedwards.github.io/jeep-com-no-bs/">
+          <div class="overflow-clip bg-zinc-900 text-white sm:rounded-xl sm:hard-box-shadow-right sm:shadow-yellow-500 drop-shadow-xl-left">
+            <h2 class="text-4xl py-6 px-2 font-bold">JEEP.COM RECREATION</h2>
+            <img class="max-lg:hidden" src="/img/projects/jeep-com-md.png" />
+            <img class="lg:hidden" src="/img/projects/jeep-com-sm.png" />
+          </div>
+        </a>
       </section>
     </section>
-    <section id="personal"  class="my-6 mx-auto w-2/3">
+    <section id="personal"  class="max-sm:text-left my-6 mx-6 md:mx-auto md:w-2/3">
       <h3 class="text-2xl mb-4 font-medium">
         A little more about me
       </h3>
@@ -246,7 +243,7 @@ appWrapper.innerHTML = /*html*/ `
         I get the most satisfaction when I can use my knowledge to support others, and so am always looking for opportunities to help out, share ideas and teach. Sometimes that aid comes in the form of solitary diligence, preparing something great you can present to others.
       </p>
     </section>
-    <section id="connect" class="my-6 mx-auto w-2/3">
+    <section id="connect" class="max-sm:text-left my-6 mx-6 md:mx-auto md:w-2/3">
       <h2 class="text-3xl mb-4 font-semibold">
         Reach out!
       </h2>
@@ -256,7 +253,7 @@ appWrapper.innerHTML = /*html*/ `
       <h4 class="text-lg mb-4 text-balance">
         Connect with me on LinkedIn below, or send an email to 
         <a
-          class="link underline"
+          class="link underline break-words"
           href="mailto: julian.michael.edwards+dev@gmail.com"
           >julian.michael.edwards+dev@gmail.com
         </a>

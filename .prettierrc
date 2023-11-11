@@ -8,7 +8,7 @@
 
     "overrides": [
         {
-            "files": ["*.html", "*.pug", "*.yml"],
+            "files": ["*.html", "*.pug", "*.yml", "*.yaml"],
             "options": {
                 "tabWidth": 2,
                 "bracketSameLine": false

@@ -10,7 +10,7 @@ appWrapper.innerHTML = /*html*/ `
   <main>
     <section id="intro" class="m-6">
       <div class="relative inline-block my-4">
-        <img src="/img/julianeportrait.jpg" class="rounded-full h-36 w-36 drop-shadow-lg">
+        <img src="./img/julianeportrait.jpg" class="rounded-full h-36 w-36 drop-shadow-lg">
         <svg class="absolute inline-block -right-3 -bottom-4 h-16 w-16 text-cyan-500 drop-shadow-lg">
           ${jeLogoSvg}
         </svg>
@@ -102,8 +102,8 @@ appWrapper.innerHTML = /*html*/ `
        <a class="flex-1 sm:m-6" href="https://gamesnotplayed.mejulian.dev/">
           <div class="overflow-clip bg-games-not-played-bg-0 text-games-not-played-light sm:rounded-xl sm:hard-box-shadow-left sm:shadow-games-not-played-primary drop-shadow-xl">
             <h2 class="text-4xl px-2 py-6 font-bold ">GAMES NOT PLAYED</h2>
-            <img class="max-lg:hidden" src="/img/projects/games-not-played-md.png" />
-            <img class="lg:hidden" src="/img/projects/games-not-played-sm.png" />
+            <img class="max-lg:hidden" src="./img/projects/games-not-played-md.png" />
+            <img class="lg:hidden" src="./img/projects/games-not-played-sm.png" />
           </div>
         </a>
         <div class="flex-1 m-6 text-left lg:text-right rounded-md">
@@ -166,7 +166,7 @@ appWrapper.innerHTML = /*html*/ `
           <div class="overflow-clip h-96 bg-zinc-400 text-white sm:rounded-xl sm:hard-box-shadow-right sm:shadow-orange-600 drop-shadow-xl-left">
             <h2 class="text-4xl py-6 px-2 font-bold">PARKING LOT SIMULATION</h2>
             <div class="relative w-full h-full bg-parking-lot">
-              <img src="/img/projects/car-orange.png" class="rotate-180 absolute scale-90 left-5 top-5" />
+              <img src="./img/projects/car-orange.png" class="rotate-180 absolute scale-90 left-5 top-5" />
             </div>
           </div>
         </a>
@@ -175,8 +175,8 @@ appWrapper.innerHTML = /*html*/ `
         <a class="flex-1 sm:m-6" href="https://julianmedwards.github.io/movie-db/">
           <div class="overflow-clip bg-zinc-400 text-white sm:rounded-xl sm:hard-box-shadow-left sm:shadow-blue-800 drop-shadow-xl">
             <h2 class="text-4xl py-6 px-2 font-bold">MOVIE DATABASE</h2>
-              <img class="max-lg:hidden" src="/img/projects/movie-db-md.png" />
-              <img class="lg:hidden" src="/img/projects/movie-db-sm.png" />
+              <img class="max-lg:hidden" src="./img/projects/movie-db-md.png" />
+              <img class="lg:hidden" src="./img/projects/movie-db-sm.png" />
           </div>
         </a>
         <div class="flex-1 m-6 text-left lg:text-right rounded-md">
@@ -220,8 +220,8 @@ appWrapper.innerHTML = /*html*/ `
         <a class="flex-1 sm:m-6" href="https://julianmedwards.github.io/jeep-com-no-bs/">
           <div class="overflow-clip bg-zinc-900 text-white sm:rounded-xl sm:hard-box-shadow-right sm:shadow-yellow-500 drop-shadow-xl-left">
             <h2 class="text-4xl py-6 px-2 font-bold">JEEP.COM RECREATION</h2>
-            <img class="max-lg:hidden" src="/img/projects/jeep-com-md.png" />
-            <img class="lg:hidden" src="/img/projects/jeep-com-sm.png" />
+            <img class="max-lg:hidden" src="./img/projects/jeep-com-md.png" />
+            <img class="lg:hidden" src="./img/projects/jeep-com-sm.png" />
           </div>
         </a>
       </section>

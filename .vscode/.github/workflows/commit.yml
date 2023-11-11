@@ -1,0 +1,60 @@
+name: Build and deploy to GH Pages
+
+on:
+  workflow_dispatch:
+  workflow_call:
+  push:
+    branches:
+      - 'main'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+        # Setup node
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      # Install monorepo dependencies.
+      - name: Install dependencies
+        run: npm install
+
+      # Build both the client and server packages
+      - name: Build
+        run: npm run build
+
+      # Setup pages for hosting the client
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      # Package the client's built source into an artifact
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: '/dist'
+
+      # Deploy client to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2

@@ -7,10 +7,6 @@ export default {
         },
         extend: {
             backgroundImage: {
-                // 'parking-lot': "url('/img/parkinglot.jpg')",
-                // 'games-not-played': "url('/img/games-not-played.png')",
-                // 'movie-db': "url('/img/movie-db.png')",
-                // 'jeep-com': "url('/img/jeep-com.png')",
                 'parking-lot': "url('/img/projects/parking-lot.jpg')",
                 'games-not-played-md':
                     "url('/img/projects/games-not-played-md.png')",
@@ -24,6 +20,7 @@ export default {
             colors: {
                 'games-not-played': {
                     primary: '#3b5249',
+                    'primary-active': '#3c6e5b',
                     'bg-0': '#141314',
                     light: '#e6fffbfa',
                 },

@@ -1,7 +1,8 @@
 import './src/index.css'
-import jeLogoSvg from './src/je-logo-svg'
-import githubSvg from './src/github-svg'
-import linkedinSvg from './src/linkedin-svg'
+import jeLogoSvg from './src/jeLogoSvg'
+import linkIconSvg from './src/linkIconSvg'
+import githubSvg from './src/githubSvg'
+import linkedinSvg from './src/linkedinSvg'
 
 const appWrapper = document.querySelector('#app')
 
@@ -99,13 +100,19 @@ appWrapper.innerHTML = /*html*/ `
     <section id="projects" class="max-w-screen-xl my-6 mx-auto">
       <h2 class="text-3xl mb-6 font-medium">So what's that really look like?</h2>
       <section class="flex flex-col md:flex-row lg:mt-12 mb-6 lg:mb-24 lg:gap-28">
-       <a class="flex-1 sm:m-6" href="https://gamesnotplayed.mejulian.dev/">
-          <div class="overflow-hidden bg-games-not-played-bg-0 text-games-not-played-light sm:rounded-xl sm:hard-box-shadow-left sm:shadow-games-not-played-primary drop-shadow-xl">
-            <h2 class="text-4xl px-2 py-6 font-bold ">GAMES NOT PLAYED</h2>
+       <div class="flex-1 sm:m-6">
+          <div class="project-img-hover overflow-hidden bg-games-not-played-bg-0 text-games-not-played-light sm:rounded-xl sm:hard-box-shadow-left sm:shadow-games-not-played-primary sm:hover:shadow-games-not-played-primary-active drop-shadow-xl">
+            <a href="https://gamesnotplayed.mejulian.dev/">
+              <h2 class="text-4xl py-6 px-6 font-bold">
+                GAMES NOT <span class="whitespace-nowrap">PLAYED${linkIconSvg(
+                    'inline h-6 w-6'
+                )}</span>
+              </h2>
             <img class="max-lg:hidden" src="./img/projects/games-not-played-md.png" />
             <img class="lg:hidden" src="./img/projects/games-not-played-sm.png" />
+            </a>
           </div>
-        </a>
+        </div>
         <div class="flex-1 m-6 text-left lg:text-right rounded-md">
           <h4 class="text-xl font-medium text-balance mb-3">
             Building a maintainable and fully featured app
@@ -118,7 +125,7 @@ appWrapper.innerHTML = /*html*/ `
               With Games Not Played users have access to an extensive 3rd party database of games. Using simple data and sorting features you can easily narrow down your choices.
             </p>
             <p class="my-2 text-balance">
-              My primary focus was to create a well rounded app with consistent custom CSS styling, working user authentication, and proper web hosting. I also integrated VS Code development containers and a continuous delivery workflow with Github Actions and Amazon Web services.
+              My primary focus was to create a well rounded app with consistent custom CSS styling, working user authentication, and proper web hosting. I also integrated VS Code development containers and a continuous delivery workflow with Github Actions and Amazon Web Services.
             </p>
             <div>
               <h6 class="text-lg font-medium mt-3">Key Technologies and Concepts</h6>
@@ -162,23 +169,35 @@ appWrapper.innerHTML = /*html*/ `
             </ul>
           </div>
         </div>
-        <a class="flex-1 h-96 sm:m-6" href="https://julianmedwards.github.io/visual-parking-lot/">
-          <div class="overflow-hidden h-96 bg-zinc-400 text-white sm:rounded-xl sm:hard-box-shadow-right sm:shadow-orange-600 drop-shadow-xl-left">
-            <h2 class="text-4xl py-6 px-2 font-bold">PARKING LOT SIMULATION</h2>
-            <div class="relative w-full h-full bg-parking-lot">
-              <img src="./img/projects/car-orange.png" class="rotate-180 absolute scale-90 left-5 top-5" />
-            </div>
+        <div class="flex-1 h-96 sm:m-6">
+          <div class="project-img-hover overflow-hidden h-96 bg-zinc-400 text-white sm:rounded-xl sm:hard-box-shadow-right sm:shadow-orange-600 sm:hover:shadow-orange-500 drop-shadow-xl-left">
+            <a href="https://julianmedwards.github.io/visual-parking-lot/">
+              <h2 class="text-4xl py-6 px-6 font-bold">
+                PARKING LOT <span class="whitespace-nowrap">SIMULATION${linkIconSvg(
+                    'inline h-6 w-6'
+                )}</span>
+              </h2>
+              <div class="relative w-full h-full bg-parking-lot">
+                <img src="./img/projects/car-orange.png" class="rotate-180 absolute scale-90 left-5 top-5" />
+              </div>
+            </a>
           </div>
-        </a>
+        </div>
       </section>
       <section class="flex flex-col md:flex-row my-6 lg:my-24 lg:gap-28">
-        <a class="flex-1 sm:m-6" href="https://julianmedwards.github.io/movie-db/">
-          <div class="overflow-hidden bg-zinc-400 text-white sm:rounded-xl sm:hard-box-shadow-left sm:shadow-blue-800 drop-shadow-xl">
-            <h2 class="text-4xl py-6 px-2 font-bold">MOVIE DATABASE</h2>
+        <div class="flex-1 sm:m-6">
+          <div class="project-img-hover overflow-hidden bg-zinc-400 text-white sm:rounded-xl sm:hard-box-shadow-left sm:shadow-blue-800 sm:hover:shadow-blue-700 drop-shadow-xl">
+            <a href="https://julianmedwards.github.io/movie-db/">
+              <h2 class="text-4xl py-6 px-6 font-bold">
+                MOVIE <span class="whitespace-nowrap">DATABASE${linkIconSvg(
+                    'inline h-6 w-6'
+                )}</span>
+              </h2>
               <img class="max-lg:hidden" src="./img/projects/movie-db-md.png" />
               <img class="lg:hidden" src="./img/projects/movie-db-sm.png" />
+            </a>
           </div>
-        </a>
+        </div>
         <div class="flex-1 m-6 text-left lg:text-right rounded-md">
           <h4 class="text-xl font-medium text-balance mb-3">
             Using real data
@@ -217,13 +236,19 @@ appWrapper.innerHTML = /*html*/ `
             </ul>
           </div>
         </div>
-        <a class="flex-1 sm:m-6" href="https://julianmedwards.github.io/jeep-com-no-bs/">
-          <div class="overflow-hidden bg-zinc-900 text-white sm:rounded-xl sm:hard-box-shadow-right sm:shadow-yellow-500 drop-shadow-xl-left">
-            <h2 class="text-4xl py-6 px-2 font-bold">JEEP.COM RECREATION</h2>
-            <img class="max-lg:hidden" src="./img/projects/jeep-com-md.png" />
-            <img class="lg:hidden" src="./img/projects/jeep-com-sm.png" />
+        <div class="flex-1 sm:m-6">
+          <div class="project-img-hover overflow-hidden bg-zinc-900 text-white sm:rounded-xl sm:hard-box-shadow-right sm:shadow-yellow-500 sm:hover:shadow-yellow-400 drop-shadow-xl-left">
+            <a href="https://julianmedwards.github.io/jeep-com-no-bs/">
+              <h2 class="text-4xl py-6 px-6 font-bold">
+                JEEP.COM <span class="whitespace-nowrap">RECREATION${linkIconSvg(
+                    'inline h-6 w-6'
+                )}</span>
+              </h2>
+              <img class="max-lg:hidden" src="./img/projects/jeep-com-md.png" />
+              <img class="lg:hidden" src="./img/projects/jeep-com-sm.png" />
+            </a>
           </div>
-        </a>
+        </div>
       </section>
     </section>
     <section id="personal"  class="max-sm:text-left my-6 mx-6 md:mx-auto md:w-2/3">

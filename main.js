@@ -99,7 +99,7 @@ appWrapper.innerHTML = /*html*/ `
     </section>
     <section id="projects" class="max-w-screen-xl my-6 mx-auto md:px-6">
       <h3 class="text-2xl font-medium mb-6">So what's that really look like?</h3>
-      <section class="flex flex-col sm:flex-row lg:mt-12 mb-6 lg:mb-24 lg:gap-28">
+      <section class="flex flex-col sm:flex-row mb-6 lg:mb-24 lg:gap-28">
        <div class="flex-1 sm:m-6">
           <div class="project-img-hover overflow-hidden bg-games-not-played-bg-0 text-white sm:rounded-xl sm:hard-box-shadow-left sm:shadow-games-not-played-primary sm:hover:shadow-games-not-played-primary-active drop-shadow-xl">
             <a href="https://gamesnotplayed.mejulian.dev/" target="_blank">
@@ -113,7 +113,7 @@ appWrapper.innerHTML = /*html*/ `
             </a>
           </div>
         </div>
-        <div class="flex-1 m-6 text-left lg:text-right rounded-md">
+        <div class="flex-1 m-6 mb-0 text-left lg:text-right rounded-md">
           <h4 class="text-xl font-medium text-balance mb-3">
             Building a maintainable and fully featured app
           </h4>
@@ -150,7 +150,7 @@ appWrapper.innerHTML = /*html*/ `
         </div>
       </section>
       <section class="flex flex-col-reverse sm:flex-row my-6 lg:my-24 lg:gap-28">
-        <div class="flex-1 m-6 text-left rounded-md">
+        <div class="flex-1 m-6 mb-0 text-left rounded-md">
           <h4 class="text-xl font-medium text-balance mb-3">
           Handling complexity and edge cases
           </h4>
@@ -206,7 +206,7 @@ appWrapper.innerHTML = /*html*/ `
             </a>
           </div>
         </div>
-        <div class="flex-1 m-6 text-left lg:text-right rounded-md">
+        <div class="flex-1 m-6 mb-0 text-left lg:text-right rounded-md">
           <h4 class="text-xl font-medium text-balance mb-3">
             Using real data
           </h4>
@@ -227,7 +227,7 @@ appWrapper.innerHTML = /*html*/ `
         </div>
       </section>
       <section class="flex flex-col-reverse sm:flex-row my-6 lg:my-24 lg:gap-28">
-        <div class="flex-1 m-6 text-left rounded-md">
+        <div class="flex-1 m-6 mb-0 text-left rounded-md">
           <h4 class="text-xl font-medium text-balance">
             Putting CSS to the test
           </h4>

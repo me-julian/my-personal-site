@@ -23,12 +23,12 @@
     .project-img-hover {
         @apply transition-all;
 
-        h2 {
+        h1 {
             @apply transition-all duration-200;
         }
 
         &:hover {
-            h2 {
+            h1 {
                 @apply scale-105;
             }
         }

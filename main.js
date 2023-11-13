@@ -6,7 +6,7 @@ import linkedinSvg from './src/linkedinSvg'
 
 const appWrapper = document.querySelector('#app')
 
-appWrapper.classList.add('text-center', 'm-0')
+appWrapper.classList.add('text-center', 'font-sans', 'm-0')
 appWrapper.innerHTML = /*html*/ `
   <main>
     <section id="intro" class="m-6">
@@ -16,41 +16,41 @@ appWrapper.innerHTML = /*html*/ `
           ${jeLogoSvg}
         </svg>
       </div>
-      <div class="my-6">
+      <div class="my-7">
         <h1 class="mb-4 text-5xl font-medium">
           Hi!
         </h1>
-        <h2 class="text-2xl text-gray-700">
+        <h3 class="text-2xl text-gray-700">
           I'm <span class="font-medium text-gray-800">Julian Edwards</span>, 
           a web developer in Austin, Texas.
-        </h2>
+        </h3>
       </div>
       <div class="max-sm:text-left md:mx-auto md:w-2/3">
-        <h3 class="text-center text-2xl mb-6">
+        <h3 class="text-2xl font-medium mb-7">
           Let me tell you a little bit about myself.
         </h3>
-        <h5 class="text-lg mb-3">
+        <h5 class="text-lg font-medium mb-3">
           Computers were central to many of my hobbies growing up
         </h5>
-        <p class="mb-6 text-balance">
+        <p class="mb-7 text-balance font-sans">
           Since I got my first computer in 2011 I've had many different experiences 
           and solved many problems with computers. Whether that's learning to setup 
           and troubleshoot video game mod installations, my first dual boot Ubuntu 
           system, and yes even messing with Ruby and Java.
         </p>
-        <h5 class="text-lg mb-3">
+        <h5 class="text-lg font-medium mb-3">
           But the story didn't end there...
         </h5>
-        <p class="mb-6 text-balance">
+        <p class="mb-7 text-balance">
           A couple of years ago I began to pursue them professionally. With all my 
           experiences highlighting my love for learning, solving problems, tinkering 
           and creating, I decided to take the plunge and return to coding. I started 
           with Python, but suddenly was offered a unique opportunity...
         </p>
-        <h5 class="text-lg mb-3">
+        <h5 class="text-lg font-medium mb-3">
           Enter Inventive Academy
         </h5>
-        <p class="mb-6 text-balance">
+        <p class="mb-7 text-balance">
           I was lucky enough to be put into contact with 
           <a class="link underline" href="https://learn.inventiveacademy.io/" target="_blank"
           >Inventive</a> who were looking for volunteers to trial run their full 
@@ -59,10 +59,10 @@ appWrapper.innerHTML = /*html*/ `
       </div>
     </section>
     <section id="skills" class="my-6 mx-6 md:mx-auto md:w-2/3">
-      <h3 class="text-2xl mb-6">Let's take a look at what I've learned</h3>
+      <h3 class="text-2xl font-medium mb-6">Let's take a look at what I've learned</h3>
       <div class="flex flex-col lg:flex-row justify-around gap-8 my-6 sm:mx-6 p-6 bg-slate-200 rounded-sm">
         <div class="flex-1 py-6 bg-gradient-to-b sm:bg-gradient-to-r from-cyan-50 to-cyan-100 border-r border-b border-zinc-300 rounded-md shadow-md">
-          <h6 class="text-lg mb-3 mx-2">Frontend</h6>
+          <h5 class="text-lg font-medium mb-3 mx-2">Frontend</h5>
           <ul class="mx-2">
             <li>HTML</li>
             <li>CSS</li>
@@ -72,7 +72,7 @@ appWrapper.innerHTML = /*html*/ `
           </ul>
         </div>
         <div class="flex-1 py-6 bg-cyan-100 border-r border-b border-zinc-300 rounded-md shadow-md">
-          <h6 class="text-lg mb-3">Backend</h6>
+          <h5 class="text-lg font-medium mb-3 mx-2">Backend</h5>
           <ul>
             <li>Node.js</li>
             <li>NPM/PNPM</li>
@@ -81,7 +81,7 @@ appWrapper.innerHTML = /*html*/ `
           </ul>
         </div>
         <div class="flex-1 py-6 bg-gradient-to-b sm:bg-gradient-to-r from-cyan-100 to-cyan-125 border-r border-b border-zinc-300 rounded-md shadow-md">
-          <h6 class="text-lg mb-3">Infrastructure</h6>
+          <h5 class="text-lg font-medium mb-3 mx-2">Infrastructure</h5>
           <ul>
             <li>Docker</li>
             <li>Bash</li>
@@ -97,17 +97,17 @@ appWrapper.innerHTML = /*html*/ `
         Learning and using new tech is exciting. There are many others I'd like to try and plenty left to learn about what I already know. However, what really excites me is the prospect of putting these tools to use building real products with a team.
       </p>
     </section>
-    <section id="projects" class="max-w-screen-xl my-6 mx-auto">
-      <h2 class="text-3xl mb-6 font-medium">So what's that really look like?</h2>
-      <section class="flex flex-col md:flex-row lg:mt-12 mb-6 lg:mb-24 lg:gap-28">
+    <section id="projects" class="max-w-screen-xl my-6 mx-auto md:px-6">
+      <h3 class="text-2xl font-medium mb-6">So what's that really look like?</h3>
+      <section class="flex flex-col sm:flex-row lg:mt-12 mb-6 lg:mb-24 lg:gap-28">
        <div class="flex-1 sm:m-6">
           <div class="project-img-hover overflow-hidden bg-games-not-played-bg-0 text-white sm:rounded-xl sm:hard-box-shadow-left sm:shadow-games-not-played-primary sm:hover:shadow-games-not-played-primary-active drop-shadow-xl">
             <a href="https://gamesnotplayed.mejulian.dev/" target="_blank">
-              <h2 class="text-4xl py-6 px-6 font-bold">
+              <h1 class="text-4xl py-6 px-6 font-bold">
                 GAMES NOT <span class="whitespace-nowrap">PLAYED${linkIconSvg(
                     'inline h-6 w-6'
                 )}</span>
-              </h2>
+              </h1>
             <img class="max-lg:hidden" src="./img/projects/games-not-played-md.png" />
             <img class="lg:hidden" src="./img/projects/games-not-played-sm.png" />
             </a>
@@ -128,7 +128,7 @@ appWrapper.innerHTML = /*html*/ `
               My primary focus was to create a well rounded app with consistent custom CSS styling, working user authentication, and proper web hosting. I also integrated VS Code development containers and a continuous delivery workflow with Github Actions and Amazon Web Services.
             </p>
             <div>
-              <h6 class="text-lg font-medium mt-3">Key Technologies and Concepts</h6>
+              <h5 class="text-lg font-medium mt-3">Key Technologies and Concepts</h5>
               <ul class="max-lg:ml-8 max-lg:list-disc lg:mr-8 lg:list-disc-right">
                 <li>Typescript</li>
                 <li>React</li>
@@ -149,7 +149,7 @@ appWrapper.innerHTML = /*html*/ `
           </div>
         </div>
       </section>
-      <section class="flex flex-col-reverse md:flex-row my-6 lg:my-24 lg:gap-28">
+      <section class="flex flex-col-reverse sm:flex-row my-6 lg:my-24 lg:gap-28">
         <div class="flex-1 m-6 text-left rounded-md">
           <h4 class="text-xl font-medium text-balance mb-3">
           Handling complexity and edge cases
@@ -160,7 +160,7 @@ appWrapper.innerHTML = /*html*/ `
             </p>
           </div>
           <div>
-            <h6 class="text-lg font-medium mt-3">Key Technologies and Concepts</h6>
+            <h5 class="text-lg font-medium mt-3">Key Technologies and Concepts</h5>
             <ul class="ml-8 list-disc">
             <li>Object Oriented Programming</li>
             <li>Recursion</li>
@@ -180,11 +180,11 @@ appWrapper.innerHTML = /*html*/ `
         <div class="flex-1 h-96 sm:m-6">
           <div class="project-img-hover overflow-hidden h-96 bg-zinc-400 text-white sm:rounded-xl sm:hard-box-shadow-right sm:shadow-orange-600 sm:hover:shadow-orange-500 drop-shadow-xl-left">
             <a href="https://julianmedwards.github.io/visual-parking-lot/" target="_blank">
-              <h2 class="text-4xl py-6 px-6 font-bold">
+              <h1 class="text-4xl py-6 px-6 font-bold">
                 PARKING LOT <span class="whitespace-nowrap">SIMULATION${linkIconSvg(
                     'inline h-6 w-6'
                 )}</span>
-              </h2>
+              </h1>
               <div class="relative w-full h-full bg-parking-lot">
                 <img src="./img/projects/car-orange.png" class="rotate-180 absolute scale-90 left-5 top-5" />
               </div>
@@ -192,15 +192,15 @@ appWrapper.innerHTML = /*html*/ `
           </div>
         </div>
       </section>
-      <section class="flex flex-col md:flex-row my-6 lg:my-24 lg:gap-28">
+      <section class="flex flex-col sm:flex-row my-6 lg:my-24 lg:gap-28">
         <div class="flex-1 sm:m-6">
           <div class="project-img-hover overflow-hidden bg-zinc-400 text-white sm:rounded-xl sm:hard-box-shadow-left sm:shadow-blue-800 sm:hover:shadow-blue-700 drop-shadow-xl">
             <a href="https://julianmedwards.github.io/movie-db/" target="_blank">
-              <h2 class="text-4xl py-6 px-6 font-bold">
+              <h1 class="text-4xl py-6 px-6 font-bold">
                 MOVIE <span class="whitespace-nowrap">DATABASE${linkIconSvg(
                     'inline h-6 w-6'
                 )}</span>
-              </h2>
+              </h1>
               <img class="max-lg:hidden" src="./img/projects/movie-db-md.png" />
               <img class="lg:hidden" src="./img/projects/movie-db-sm.png" />
             </a>
@@ -216,7 +216,7 @@ appWrapper.innerHTML = /*html*/ `
             </p>
           </div>
           <div>
-            <h6 class="text-lg font-medium mt-3">Key Technologies and Concepts</h6>
+            <h5 class="text-lg font-medium mt-3">Key Technologies and Concepts</h5>
             <ul class="max-lg:ml-8 max-lg:list-disc lg:mr-8 lg:list-disc-right">
               <li>jQuery</li>
               <li>Bootstrap</li>
@@ -226,7 +226,7 @@ appWrapper.innerHTML = /*html*/ `
           </div>
         </div>
       </section>
-      <section class="flex flex-col-reverse md:flex-row my-6 lg:my-24 lg:gap-28">
+      <section class="flex flex-col-reverse sm:flex-row my-6 lg:my-24 lg:gap-28">
         <div class="flex-1 m-6 text-left rounded-md">
           <h4 class="text-xl font-medium text-balance">
             Putting CSS to the test
@@ -237,7 +237,7 @@ appWrapper.innerHTML = /*html*/ `
             </p>
           </div>
           <div>
-            <h6 class="text-lg font-medium mt-3">Key Technologies and Concepts</h6>
+            <h5 class="text-lg font-medium mt-3">Key Technologies and Concepts</h5>
             <ul class="ml-8 list-disc">
               <li>CSS</li>
               <li>Responsive Layouts</li>
@@ -247,11 +247,11 @@ appWrapper.innerHTML = /*html*/ `
         <div class="flex-1 sm:m-6">
           <div class="project-img-hover overflow-hidden bg-zinc-900 text-white sm:rounded-xl sm:hard-box-shadow-right sm:shadow-yellow-500 sm:hover:shadow-yellow-400 drop-shadow-xl-left">
             <a href="https://julianmedwards.github.io/jeep-com-no-bs/" target="_blank">
-              <h2 class="text-4xl py-6 px-6 font-bold">
+              <h1 class="text-4xl py-6 px-6 font-bold">
                 JEEP.COM <span class="whitespace-nowrap">RECREATION${linkIconSvg(
                     'inline h-6 w-6'
                 )}</span>
-              </h2>
+              </h1>
               <img class="max-lg:hidden" src="./img/projects/jeep-com-md.png" />
               <img class="lg:hidden" src="./img/projects/jeep-com-sm.png" />
             </a>
@@ -277,13 +277,13 @@ appWrapper.innerHTML = /*html*/ `
       </p>
     </section>
     <section id="connect" class="max-sm:text-left my-6 mx-6 md:mx-auto md:w-2/3">
-      <h2 class="text-3xl mb-4 font-semibold">
+      <h3 class="text-2xl mb-4 font-medium">
         Reach out!
-      </h2>
+      </h3>
       <h5 class="text-lg mb-4 text-balance">
         Interested in my projects? Want to see some of the many others I've completed, or just chat?
       </h5>
-      <h4 class="text-lg mb-4 text-balance">
+      <h5 class="text-lg mb-4 text-balance">
         Connect with me on LinkedIn below, or send an email to 
         <a
           class="link underline break-words"
@@ -291,7 +291,7 @@ appWrapper.innerHTML = /*html*/ `
           >julian.michael.edwards+dev@gmail.com
         </a>
       </h5>
-      <h4 class="text-lg text-balance">
+      <h5 class="text-lg text-balance">
         I've also been a regular attendee of the 
         <a
           class="link underline"

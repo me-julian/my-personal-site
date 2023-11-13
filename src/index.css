@@ -3,8 +3,16 @@
 @tailwind utilities;
 
 @layer utilities {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: 'Ubuntu', 'Helvetica', 'Arial', 'sans-serif';
+    }
+
     .link {
-        @apply text-cyan-500 hover:text-cyan-700 active:text-cyan-500 transition-colors;
+        @apply text-cyan-700 hover:text-cyan-900 active:text-cyan-500 transition-colors;
     }
     .link.light {
         @apply text-cyan-50 hover:text-slate-300 active:text-cyan-50 transition-colors;

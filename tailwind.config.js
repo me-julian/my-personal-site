@@ -3,7 +3,7 @@ export default {
     content: ['./index.html', './main.js', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
         fontFamily: {
-            sans: ['Ubuntu', 'Helvetica', 'Arial', 'sans-serif'],
+            sans: ['Prompt', 'Helvetica', 'Arial', 'sans-serif'],
         },
         extend: {
             backgroundImage: {

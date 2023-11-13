@@ -22,7 +22,6 @@ export default {
                     primary: '#3b5249',
                     'primary-active': '#3c6e5b',
                     'bg-0': '#141314',
-                    light: '#e6fffbfa',
                 },
                 'cyan-125': '#aef4fc',
             },

@@ -100,7 +100,7 @@ appWrapper.innerHTML = /*html*/ `
       <h2 class="text-3xl mb-6 font-medium">So what's that really look like?</h2>
       <section class="flex flex-col md:flex-row lg:mt-12 mb-6 lg:mb-24 lg:gap-28">
        <a class="flex-1 sm:m-6" href="https://gamesnotplayed.mejulian.dev/">
-          <div class="overflow-clip bg-games-not-played-bg-0 text-games-not-played-light sm:rounded-xl sm:hard-box-shadow-left sm:shadow-games-not-played-primary drop-shadow-xl">
+          <div class="overflow-hidden bg-games-not-played-bg-0 text-games-not-played-light sm:rounded-xl sm:hard-box-shadow-left sm:shadow-games-not-played-primary drop-shadow-xl">
             <h2 class="text-4xl px-2 py-6 font-bold ">GAMES NOT PLAYED</h2>
             <img class="max-lg:hidden" src="./img/projects/games-not-played-md.png" />
             <img class="lg:hidden" src="./img/projects/games-not-played-sm.png" />
@@ -163,7 +163,7 @@ appWrapper.innerHTML = /*html*/ `
           </div>
         </div>
         <a class="flex-1 h-96 sm:m-6" href="https://julianmedwards.github.io/visual-parking-lot/">
-          <div class="overflow-clip h-96 bg-zinc-400 text-white sm:rounded-xl sm:hard-box-shadow-right sm:shadow-orange-600 drop-shadow-xl-left">
+          <div class="overflow-hidden h-96 bg-zinc-400 text-white sm:rounded-xl sm:hard-box-shadow-right sm:shadow-orange-600 drop-shadow-xl-left">
             <h2 class="text-4xl py-6 px-2 font-bold">PARKING LOT SIMULATION</h2>
             <div class="relative w-full h-full bg-parking-lot">
               <img src="./img/projects/car-orange.png" class="rotate-180 absolute scale-90 left-5 top-5" />
@@ -173,7 +173,7 @@ appWrapper.innerHTML = /*html*/ `
       </section>
       <section class="flex flex-col md:flex-row my-6 lg:my-24 lg:gap-28">
         <a class="flex-1 sm:m-6" href="https://julianmedwards.github.io/movie-db/">
-          <div class="overflow-clip bg-zinc-400 text-white sm:rounded-xl sm:hard-box-shadow-left sm:shadow-blue-800 drop-shadow-xl">
+          <div class="overflow-hidden bg-zinc-400 text-white sm:rounded-xl sm:hard-box-shadow-left sm:shadow-blue-800 drop-shadow-xl">
             <h2 class="text-4xl py-6 px-2 font-bold">MOVIE DATABASE</h2>
               <img class="max-lg:hidden" src="./img/projects/movie-db-md.png" />
               <img class="lg:hidden" src="./img/projects/movie-db-sm.png" />
@@ -218,7 +218,7 @@ appWrapper.innerHTML = /*html*/ `
           </div>
         </div>
         <a class="flex-1 sm:m-6" href="https://julianmedwards.github.io/jeep-com-no-bs/">
-          <div class="overflow-clip bg-zinc-900 text-white sm:rounded-xl sm:hard-box-shadow-right sm:shadow-yellow-500 drop-shadow-xl-left">
+          <div class="overflow-hidden bg-zinc-900 text-white sm:rounded-xl sm:hard-box-shadow-right sm:shadow-yellow-500 drop-shadow-xl-left">
             <h2 class="text-4xl py-6 px-2 font-bold">JEEP.COM RECREATION</h2>
             <img class="max-lg:hidden" src="./img/projects/jeep-com-md.png" />
             <img class="lg:hidden" src="./img/projects/jeep-com-sm.png" />

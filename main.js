@@ -158,11 +158,21 @@ appWrapper.innerHTML = /*html*/ `
             <p class="my-2 text-balance">
               An early assignment, I was tasked with building a simulation of cars in a parking lot by scratch. Using an object-oriented approach I created recursive algorithms to get cars to and from their spaces, generate necessary turn and parking animations and handle collision aversion in both standard and edge cases.
             </p>
+            <p class="my-2 text-balance">
+              A formative moment in my journey to learn what really makes a software engineer beyond knowing language syntax and libraries, I wrote an article about my experience with this project.
+            </p>
+            <a
+              class="my-2 link underline text-balance"
+              href="https://www.linkedin.com/pulse/how-junior-dev-can-learn-from-40-year-old-mistakes-julian-edwards-3p2kc/"
+              target="_blank"
+            >
+              Click here to read more.
+            </a>
           </div>
           <div>
             <h5 class="text-lg font-medium mt-3">Key Technologies and Concepts</h5>
             <ul class="ml-8 list-disc">
-            <li>Object Oriented Programming</li>
+            <li>Object-Oriented Programming</li>
             <li>Recursion</li>
               <li>State Machines</li>
               <li>
@@ -171,7 +181,7 @@ appWrapper.innerHTML = /*html*/ `
                   href="https://en.wikipedia.org/wiki/Second-system_effect"
                   target="_blank"
                 >
-                  The Second System Effect
+                  The Second-System Effect
                 </a>
               </li>
             </ul>
@@ -272,6 +282,13 @@ appWrapper.innerHTML = /*html*/ `
       <p class="mb-4 text-balance">
         Video games have been a constant in my life as well. Some favorites include The Elder Scrolls III: Morrowind for its immersive world, Europa Universalis IV for its systemic complexity in gradual, long term campaigns and Dark Souls for its exploration and satisfying accumulation of skill and knowledge.
       </p>
+      <p class="mb-4 text-balance">
+        I also love to travel, and have independently planned and financed trips to Europe, Connecticut, Washington D.C. and New York since 2017. In my three European trips I've visited the Czech Republic and Poland, toured France and Croatia and spent plenty of quality time with my friends in the regional cities of the Netherlands - my favorite country.
+      </p>
+      <div class="mb-4">
+        <img class="mx-auto max-w-2xl" src="./img/julian-croatia-landscape.jpg">
+        <small class="text-neutral-800">Poreč, Croatia near the <a class="link underline" href="https://en.wikipedia.org/wiki/Euphrasian_Basilica" target="_blank">Euphrasian Basilica</a></small>
+      </div>
       <p class="mb-4 text-balance">
         I get the most satisfaction when I can use my knowledge to support others, and so am always looking for opportunities to help out, share ideas and teach. Sometimes that aid comes in the form of solitary diligence, preparing something great you can present to others.
       </p>

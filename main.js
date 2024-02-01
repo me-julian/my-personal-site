@@ -1,4 +1,5 @@
 import './src/index.css'
+import readingList from './src/readingList.js'
 import jeLogoSvg from './src/jeLogoSvg'
 import linkIconSvg from './src/linkIconSvg'
 import githubSvg from './src/githubSvg'
@@ -9,6 +10,9 @@ const appWrapper = document.querySelector('#app')
 appWrapper.classList.add('text-center', 'font-sans', 'm-0')
 appWrapper.innerHTML = /*html*/ `
   <main>
+    <section id ="reading-list" class="hidden modal">
+      ${readingList}
+    </section>
     <section id="intro" class="m-6">
       <div class="relative inline-block my-4">
         <img src="./img/julianeportrait.jpg" class="rounded-full h-36 w-36 drop-shadow-lg">
@@ -268,6 +272,9 @@ appWrapper.innerHTML = /*html*/ `
           </div>
         </div>
       </section>
+    </section>
+    <section id="reading-list" class="mx-6">
+      <button onClick="openReadingList()" class="p-8 text-2xl bg-cyan-500 text-white hover:bg-cyan-600 active:text-white active:bg-cyan-500 rounded-full transition-colors">View My Reading List</button>
     </section>
     <section id="personal"  class="max-sm:text-left my-6 mx-6 md:mx-auto md:w-2/3">
       <h3 class="text-2xl mb-4 font-medium">

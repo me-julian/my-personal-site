@@ -51,4 +51,8 @@
             height: 5px;
         }
     }
+
+    .modal {
+        @apply fixed bg-white h-full w-full z-50 left-0 top-0;
+    }
 }

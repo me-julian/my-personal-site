@@ -1,5 +1,5 @@
 import './src/index.css'
-import readingList from './src/readingListHtml.js'
+import readingListHtml from './src/readingListHtml.js'
 import jeLogoSvg from './src/jeLogoSvg'
 import linkIconSvg from './src/linkIconSvg'
 import githubSvg from './src/githubSvg'
@@ -10,7 +10,7 @@ const appWrapper = document.querySelector('#app')
 appWrapper.classList.add('text-center', 'font-sans', 'm-0')
 appWrapper.innerHTML = /*html*/ `
   <section id ="reading-list-modal" class="hidden modal">
-    ${readingList}
+    ${readingListHtml}
   </section>
   <main>
     <section id="intro" class="m-6">

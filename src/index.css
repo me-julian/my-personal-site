@@ -55,4 +55,15 @@
     .modal {
         @apply fixed bg-white h-full w-full z-50 left-0 top-0;
     }
+    #scrollbar {
+        @apply fixed left-[33dvw] h-[90dvh] w-[6px] rounded-full bg-slate-600;
+        content: '';
+    }
+    #scrollbar-dot {
+        @apply relative right-[1px] h-[12px] w-[8px] rounded-full bg-slate-300;
+        content: '';
+    }
+    .book {
+        @apply m-4 h-[66dvh] w-[15dvw] rounded-sm bg-amber-500;
+    }
 }

@@ -26,8 +26,7 @@ export default /*html*/ `
         <div id="scrollbar">
             <div id="scrollbar-dot"></div>
         </div>
-        <h1 class="text-3xl">My Reading List</h1>
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center my-[5dvh]">
             ${books.map((book) => buildBookImage(book)).join('')}
         </div>
     </div>

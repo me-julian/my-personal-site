@@ -1,22 +1,22 @@
 const books = [
     {
         title: 'The Mythical Man Month',
-        image: 'mythical-man-month-1.jpg',
+        image: 'mythical-man-month-5-6.jpg',
         readDate: 'November 2023',
     },
     {
         title: 'The Pragmatic Programmer',
-        image: 'pragmatic-programmer-1.jpg',
+        image: 'pragmatic-programmer-5-6.jpg',
         readDate: 'December 2023',
     },
     {
         title: 'Refactoring',
-        image: 'refactoring-1.jpg',
+        image: 'refactoring-5-6.jpg',
         readDate: 'January 2023',
     },
     {
         title: 'The Design of Everday Things',
-        image: 'the-design-of-everday-things-1.jpg',
+        image: 'the-design-of-everday-things-5-6.jpg',
         readDate: 'In Progress',
     },
 ]
@@ -34,7 +34,9 @@ export default /*html*/ `
 
 function buildBookImage(book) {
     return /*html*/ `
-        <img class="book" src="img/books/${book.image}" />
+        <div class="book">
+            <img src="img/books/${book.image}" />
+        </div>
     `
 }
 

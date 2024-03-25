@@ -141,7 +141,7 @@ appWrapper.innerHTML = /*html*/ `
                 <li>Cloud Infrastructure</li>
                 <li>
                   <a
-                    href="https://github.com/julianmedwards/final-project-games-not-played#tech-stack"
+                    href="https://github.com/me-julian/games-not-played#tech-stack"
                     class="link"
                     target="_blank"
                   >
@@ -193,7 +193,7 @@ appWrapper.innerHTML = /*html*/ `
         </div>
         <div class="flex-1 h-96 sm:m-6">
           <div class="project-img-hover overflow-hidden h-96 bg-zinc-400 text-white sm:rounded-xl sm:hard-box-shadow-right sm:shadow-orange-600 sm:hover:shadow-orange-500 drop-shadow-xl-left">
-            <a href="https://julianmedwards.github.io/visual-parking-lot/" target="_blank">
+            <a href="https://me-julian.github.io/visual-parking-lot/" target="_blank">
               <h1 class="text-4xl py-6 px-6 font-bold">
                 PARKING LOT <span class="whitespace-nowrap">SIMULATION${linkIconSvg(
                     'inline h-6 w-6'
@@ -209,7 +209,7 @@ appWrapper.innerHTML = /*html*/ `
       <section class="flex flex-col sm:flex-row my-6 lg:my-24 lg:gap-28">
         <div class="flex-1 sm:m-6">
           <div class="project-img-hover overflow-hidden bg-zinc-400 text-white sm:rounded-xl sm:hard-box-shadow-left sm:shadow-blue-800 sm:hover:shadow-blue-700 drop-shadow-xl">
-            <a href="https://julianmedwards.github.io/movie-db/" target="_blank">
+            <a href="https://me-julian.github.io/movie-db/" target="_blank">
               <h1 class="text-4xl py-6 px-6 font-bold">
                 MOVIE <span class="whitespace-nowrap">DATABASE${linkIconSvg(
                     'inline h-6 w-6'
@@ -260,7 +260,7 @@ appWrapper.innerHTML = /*html*/ `
         </div>
         <div class="flex-1 sm:m-6">
           <div class="project-img-hover overflow-hidden bg-zinc-900 text-white sm:rounded-xl sm:hard-box-shadow-right sm:shadow-yellow-500 sm:hover:shadow-yellow-400 drop-shadow-xl-left">
-            <a href="https://julianmedwards.github.io/jeep-com-no-bs/" target="_blank">
+            <a href="https://me-julian.github.io/jeep-com-no-bs/" target="_blank">
               <h1 class="text-4xl py-6 px-6 font-bold">
                 JEEP.COM <span class="whitespace-nowrap">RECREATION${linkIconSvg(
                     'inline h-6 w-6'
@@ -337,7 +337,7 @@ appWrapper.innerHTML = /*html*/ `
         </a>
         <a
           class="inline-block m-6 link light underline drop-shadow-md"
-          href="https://github.com/julianmedwards"
+          href="https://github.com/me-julian"
           target="_blank"
         >
           ${githubSvg('h-16 w-16')}

@@ -12,13 +12,18 @@ const books = [
     {
         title: 'Refactoring',
         image: 'refactoring-5-6.jpg',
-        readDate: 'January 2023',
+        readDate: 'January 2024',
     },
     {
         title: 'The Design of Everday Things',
         image: 'the-design-of-everday-things-5-6.jpg',
-        readDate: 'In Progress',
+        readDate: 'February 2024',
     },
+    // {
+    //     title: 'The Art of Agile Development',
+    //     image: '',
+    //     readDate: 'In Progress',
+    // },
 ]
 
 export default /*html*/ `
@@ -27,7 +32,9 @@ export default /*html*/ `
             <div id="scrollbar-dot"></div>
         </div>
         <div class="flex flex-col items-center my-[5dvh]">
+            <div class="reading-list-buffer"></div>
             ${books.map((book) => buildBookImage(book)).join('')}
+            <div class="reading-list-buffer"></div>
         </div>
     </div>
 `

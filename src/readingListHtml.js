@@ -33,15 +33,15 @@ export default /*html*/ `
         </div>
         <div class="flex flex-col items-center my-[5dvh]">
             <div class="reading-list-buffer"></div>
-            ${books.map((book) => buildBookImage(book)).join('')}
+            ${books.map((book, idx) => buildBookImage(book, idx)).join('')}
             <div class="reading-list-buffer"></div>
         </div>
     </div>
 `
 
-function buildBookImage(book) {
+function buildBookImage(book, index) {
     return /*html*/ `
-        <div class="book">
+        <div class="book" style="z-index:${index}">
             <img src="img/books/${book.image}" />
         </div>
     `

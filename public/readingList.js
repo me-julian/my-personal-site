@@ -3,15 +3,42 @@
 let lastScrollPosition = 0
 
 initCustomScrollbar()
-resizeEndBuffers()
 
 document.querySelector('#reading-list-modal').addEventListener('click', () => {
     toggleReadingListVisibility()
 })
+addEventListener('resize', resizeBooks)
 addEventListener('resize', resizeEndBuffers)
+
 document
     .querySelector('#reading-list')
     .addEventListener('scroll', stopBookScroll)
+
+function resizeBooks() {
+    if (
+        document
+            .querySelector('#reading-list-modal')
+            .classList.contains('hidden')
+    ) {
+        return
+    }
+
+    resizeEndBuffers()
+
+    const books = document.querySelectorAll('.book')
+
+    books.forEach((book) => {
+        const img = book.children[0]
+        const width = book.clientWidth
+        const height = book.clientHeight
+        console.log(width)
+        console.log(height)
+        img.style.width = width + 'px'
+        book.style.width = width + 'px'
+        book.style.height = height + 'px'
+        img.style.height = height + 'px'
+    })
+}
 
 function toggleReadingListVisibility() {
     const modalWrapper = document.querySelector('#reading-list-modal')
@@ -25,11 +52,14 @@ function toggleReadingListVisibility() {
     modalWrapper.classList.toggle('hidden')
 
     window.scroll(0, lastScrollPosition)
+
+    resizeEndBuffers()
+    resizeBooks()
 }
 
 function initCustomScrollbar() {
     document.querySelector('#reading-list').addEventListener('scroll', (e) => {
-        const progress = getScrollProgress(e.target)
+        const progress = getScrollProgress()
 
         const bar = document.querySelector('#scrollbar')
         const dot = document.querySelector('#scrollbar-dot')
@@ -40,47 +70,76 @@ function initCustomScrollbar() {
     })
 }
 
-function stopBookScroll() {
-    // const bookMargin = 16 * 2
-    // const bookHeight = 316 + bookMargin / 2
-    // const wrapperBox = document
-    //     .querySelector('#reading-list')
-    //     .getBoundingClientRect()
-    // const startBufferSize =
-    //     (window.visualViewport.height * 0.9 - bookHeight) / 2 + 'px'
-    // const progress = getScrollProgress(
-    //     document.querySelector('#reading-list').children[1]
-    // )
-    // const books = document.querySelectorAll('.book')
-    // books.forEach((book) => {
-    //     const booksProgress =
-    //         (wrapperBox.top - book.getBoundingClientRect().top) *
-    //         (progress / 100)
-    //     if (
-    //         book.children[0]
-    //             .getAttribute('src')
-    //             .includes('img/books/mythical-man-month-5-6.jpg')
-    //     ) {
-    //         console.log(booksProgress)
-    //     }
-    // })
+function getBooks() {
+    const books = []
+    document
+        .querySelectorAll('.book')
+        .forEach((book) => books.push(getBook(book)))
+    return books
 }
 
-function resizeEndBuffers() {
-    // Calculated, currently fixed height + y margins
-    const BOOK_HEIGHT = 316 + 16 * 2
-    const buffers = document.querySelectorAll('.reading-list-buffer')
+function getBook(bookEl) {
+    const bookMargin = 16
+    const bookTop = bookEl.getBoundingClientRect().top - bookMargin * 2
 
-    // Current height of scrollbar set up Tailwind
-    for (let buffer of buffers) {
-        buffer.style.height =
-            (window.visualViewport.height * 0.9 - BOOK_HEIGHT) / 2 + 'px'
+    return {
+        element: bookEl,
+        bookTop,
     }
 }
 
-function getScrollProgress(element) {
-    return (
-        (element.scrollTop / (element.scrollHeight - element.clientHeight)) *
-        100
-    )
+function stopBookScroll() {
+    const wrapper = document.querySelector('#reading-list').children[1]
+    const modalBox = document
+        .querySelector('#reading-list')
+        .getBoundingClientRect()
+    const wrapperBox = wrapper.getBoundingClientRect()
+
+    const bufferHeight = calcBufferHeight()
+
+    getBooks().forEach((book) => {
+        const listTop = modalBox.height * 0.05
+        const listBottom = modalBox.height * 0.95
+        const listHeight = listBottom - listTop
+        const bookMargin = 16
+        const bookTop =
+            book.element.getBoundingClientRect().top - bookMargin * 2
+
+        const progress = ((bookTop - listHeight) / listHeight) * 100
+        if (
+            book.element.children[0].getAttribute('src').includes('refactoring')
+        ) {
+            console.log(progress)
+        }
+
+        if (progress < -100) {
+            book.element.children[0].classList.add(['absolute'])
+            book.element.children[0].style.top = listTop + 'px'
+        }
+        if (progress >= -100) {
+            book.element.children[0].classList.remove(['absolute'])
+            book.element.children[0].style.top = undefined
+        }
+    })
+}
+
+function resizeEndBuffers() {
+    const buffers = document.querySelectorAll('.reading-list-buffer')
+
+    buffers.item(0).style.height = calcBufferHeight() + 'px'
+    buffers.item(1).style.height = calcBufferHeight() + 'px'
+}
+
+function getScrollProgress() {
+    const modal = document.querySelector('#reading-list')
+    return (modal.scrollTop / (modal.scrollHeight - modal.clientHeight)) * 100
+}
+
+function calcBufferHeight() {
+    // Calculated, currently fixed height
+    const BOOK_HEIGHT = 316
+
+    // Current height of scrollbar set by Tailwind
+    const scrollbarHeight = window.visualViewport.height * 0.9
+    return (scrollbarHeight - BOOK_HEIGHT) / 2 - 16
 }

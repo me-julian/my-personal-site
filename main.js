@@ -274,7 +274,7 @@ appWrapper.innerHTML = /*html*/ `
       </section>
     </section>
     <section id="reading-list-toggle" class="mx-6">
-      <button onClick="toggleReadingListVisibility()" class="p-8 text-2xl bg-cyan-500 text-white hover:bg-cyan-600 active:text-white active:bg-cyan-500 rounded-full transition-colors">View My Reading List</button>
+      <button onClick="toggleReadingListVisibility()" class="p-8 text-2xl bg-cyan-500 text-white hover:bg-cyan-600 active:text-white active:bg-cyan-500 rounded-full drop-shadow-lg transition-colors">View My Reading List</button>
     </section>
     <section id="personal"  class="max-sm:text-left my-6 mx-6 md:mx-auto md:w-2/3">
       <h3 class="text-2xl mb-4 font-medium">

@@ -25,18 +25,13 @@ function resizeBooks() {
 
     resizeEndBuffers()
 
-    const books = document.querySelectorAll('.book')
-
-    books.forEach((book) => {
-        const img = book.children[0]
-        const width = book.clientWidth
-        const height = book.clientHeight
-        console.log(width)
-        console.log(height)
-        img.style.width = width + 'px'
-        book.style.width = width + 'px'
-        book.style.height = height + 'px'
-        img.style.height = height + 'px'
+    // Set height of book wrappers so that when we freeze their images,
+    // the height of the modal doesn't change for scrolling.
+    getBooks().forEach((book) => {
+        const width = book.wrapper.clientWidth
+        const height = book.wrapper.clientHeight
+        book.wrapper.style.height = height + 'px'
+        book.wrapper.style.width = width + 'px'
     })
 }
 
@@ -79,46 +74,36 @@ function getBooks() {
 }
 
 function getBook(bookEl) {
-    const bookMargin = 16
-    const bookTop = bookEl.getBoundingClientRect().top - bookMargin * 2
-
     return {
-        element: bookEl,
-        bookTop,
+        wrapper: bookEl,
+        image: bookEl.querySelector('img'),
     }
 }
 
 function stopBookScroll() {
-    const wrapper = document.querySelector('#reading-list').children[1]
     const modalBox = document
         .querySelector('#reading-list')
         .getBoundingClientRect()
-    const wrapperBox = wrapper.getBoundingClientRect()
-
-    const bufferHeight = calcBufferHeight()
 
     getBooks().forEach((book) => {
+        const bookImg = book.wrapper.children[0]
+
         const listTop = modalBox.height * 0.05
         const listBottom = modalBox.height * 0.95
         const listHeight = listBottom - listTop
         const bookMargin = 16
-        const bookTop =
-            book.element.getBoundingClientRect().top - bookMargin * 2
+        const bookTop = book.wrapper.getBoundingClientRect().top + bookMargin
 
-        const progress = ((bookTop - listHeight) / listHeight) * 100
-        if (
-            book.element.children[0].getAttribute('src').includes('refactoring')
-        ) {
-            console.log(progress)
-        }
+        const progress = ((bookTop - listBottom) / listHeight) * 100
 
         if (progress < -100) {
-            book.element.children[0].classList.add(['absolute'])
-            book.element.children[0].style.top = listTop + 'px'
+            bookImg.classList.add(['absolute'])
+
+            bookImg.style.top = listTop + 'px'
         }
         if (progress >= -100) {
-            book.element.children[0].classList.remove(['absolute'])
-            book.element.children[0].style.top = undefined
+            book.image.classList.remove(['absolute'])
+            book.image.style.top = null
         }
     })
 }

@@ -19,11 +19,21 @@ const books = [
         image: 'the-design-of-everday-things-5-6.jpg',
         readDate: 'February 2024',
     },
-    // {
-    //     title: 'The Art of Agile Development',
-    //     image: '',
-    //     readDate: 'In Progress',
-    // },
+    {
+        title: 'The Art of Agile Development',
+        image: 'art-of-agile-software-development-5-6.jpg',
+        readDate: 'March 2024',
+    },
+    {
+        title: 'A Philosophy of Software Design',
+        image: 'philosophy-of-software-design-5-6.jpg',
+        readDate: 'May 2024',
+    },
+    {
+        title: 'Continuous Delivery',
+        image: 'continuous-delivery-5-6.jpg',
+        readDate: 'In Progress',
+    },
 ]
 
 export default /*html*/ `
@@ -41,8 +51,8 @@ export default /*html*/ `
 
 function buildBookImage(book, index) {
     return /*html*/ `
-        <div class="book" style="z-index:${index}">
-            <img src="img/books/${book.image}" />
+        <div class="book py-4" style="z-index:${index}">
+            <img class="book-img rounded-md" src="img/books/${book.image}" />
         </div>
     `
 }

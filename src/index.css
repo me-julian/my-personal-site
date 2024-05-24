@@ -52,6 +52,10 @@
         }
     }
 
+    #pc-svg {
+        transform: translate(-50%, -50%);
+    }
+
     .modal {
         @apply fixed bg-white h-full w-full z-50 left-0 top-0;
     }
@@ -64,12 +68,9 @@
         content: '';
     }
     .book {
-        @apply m-4;
+    }
+    .book-img {
         max-width: 263px;
         aspect-ratio: 5 / 6;
-
-        > img {
-            @apply rounded-md;
-        }
     }
 }

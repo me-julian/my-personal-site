@@ -4,6 +4,7 @@ import jeLogoSvg from './src/jeLogoSvg'
 import linkIconSvg from './src/linkIconSvg'
 import githubSvg from './src/githubSvg'
 import linkedinSvg from './src/linkedinSvg'
+import pcImgSvg from './src/pcImgSvg.js'
 
 const appWrapper = document.querySelector('#app')
 
@@ -13,6 +14,9 @@ appWrapper.innerHTML = /*html*/ `
     ${readingListHtml}
   </section>
   <main>
+    <div id="pc-svg" class="block fixed top-1/2 left-1/2 w-[90dvw] z-[-1] text-slate-50">
+      ${pcImgSvg}
+    </div>
     <section id="intro" class="m-6">
       <div class="relative inline-block my-4">
         <img src="./img/julianeportrait.jpg" class="rounded-full h-36 w-36 drop-shadow-lg">
@@ -70,7 +74,7 @@ appWrapper.innerHTML = /*html*/ `
           <ul class="mx-2">
             <li>HTML</li>
             <li>CSS</li>
-            <li>Javascript/Typescript</li>
+            <li>JavaScript/TypeScript</li>
             <li>React</li>
             <li>Vite</li>
           </ul>
@@ -137,12 +141,12 @@ appWrapper.innerHTML = /*html*/ `
                 <li>Typescript</li>
                 <li>React</li>
                 <li>User Authentication</li>
-                <li>Continuous Delivery</li>
+                <li>CI/CD Automation</li>
                 <li>Cloud Infrastructure</li>
                 <li>
                   <a
                     href="https://github.com/me-julian/games-not-played#tech-stack"
-                    class="link"
+                    class="link underline"
                     target="_blank"
                   >
                     and more...

@@ -99,7 +99,7 @@ appWrapper.innerHTML = /*html*/ `
         </div>
       </div>
       <p class="max-sm:text-left text-lg mb-6 text-balance">
-        Some other technologies I've had the pleasure of using include Scala, Python, jQuery, D3, MongoDB & Mongoose ODM, Gulp, Mocha, Chai and Sinon.
+        Some other technologies I've had the pleasure of using include C#/.NET, Scala, Python, jQuery, D3, MongoDB & Mongoose ODM, Gulp, and testing frameworks like Vitest/JEST and Mocha.
       </p>
       <p class="max-sm:text-left text-lg mb-6 text-balance">
         Learning and using new tech is exciting. There are many others I'd like to try and plenty left to learn about what I already know. However, what really excites me is the prospect of putting these tools to use building real products with a team.
@@ -174,7 +174,7 @@ appWrapper.innerHTML = /*html*/ `
               href="https://www.linkedin.com/pulse/how-junior-dev-can-learn-from-40-year-old-mistakes-julian-edwards-3p2kc/"
               target="_blank"
             >
-              Click here to read more.
+              Read <span class="italic">How a Junior Dev Can Learn from 40-Year-Old Mistakes</span>
             </a>
           </div>
           <div>
@@ -277,8 +277,9 @@ appWrapper.innerHTML = /*html*/ `
         </div>
       </section>
     </section>
-    <section id="reading-list-toggle" class="mx-6">
-      <button onClick="toggleReadingListVisibility()" class="p-8 text-2xl bg-cyan-500 text-white hover:bg-cyan-600 active:text-white active:bg-cyan-500 rounded-full drop-shadow-lg transition-colors">View My Reading List</button>
+    <section id="reading-list-toggle" class="mx-6 my-6 md:my-12 lg:my-24">
+      <button onClick="toggleReadingListVisibility()" class="p-8 mb-2 text-2xl bg-cyan-500 text-white hover:bg-cyan-600 active:text-white active:bg-cyan-500 rounded-full drop-shadow-lg transition-colors">My Reading List</button>
+      <p class="text-balance">View a list of the software, design and business related books I've enjoyed reading.</p>
     </section>
     <section id="personal"  class="max-sm:text-left my-6 mx-6 md:mx-auto md:w-2/3">
       <h3 class="text-2xl mb-4 font-medium">
@@ -347,7 +348,7 @@ appWrapper.innerHTML = /*html*/ `
           ${githubSvg('h-16 w-16')}
         </a>
       </div>
-      <h6 class="font-sm font-light">Built with Vite and Tailwind.</h6>
+      <h6 class="font-sm font-light">Designed and built by me with Vite, Tailwind and client-side JS.</h6>
     </footer>
   </main>
 `

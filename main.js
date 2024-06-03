@@ -99,7 +99,7 @@ appWrapper.innerHTML = /*html*/ `
         </div>
       </div>
       <p class="max-sm:text-left text-lg mb-6 text-balance">
-        Some other technologies I've had the pleasure of using include C#/.NET, Scala, Python, jQuery, D3, MongoDB & Mongoose ODM, Gulp, and testing frameworks like Vitest/JEST and Mocha.
+        Some other technologies I've had the pleasure of using include PHP and Wordpress/Laravel, C#, Scala, Python, jQuery, D3, MongoDB & Mongoose ODM, Gulp, and testing frameworks like Vitest/JEST and Mocha.
       </p>
       <p class="max-sm:text-left text-lg mb-6 text-balance">
         Learning and using new tech is exciting. There are many others I'd like to try and plenty left to learn about what I already know. However, what really excites me is the prospect of putting these tools to use building real products with a team.
@@ -279,7 +279,41 @@ appWrapper.innerHTML = /*html*/ `
     </section>
     <section id="reading-list-toggle" class="mx-6 my-6 md:my-12 lg:my-24">
       <button onClick="toggleReadingListVisibility()" class="p-8 mb-2 text-2xl bg-cyan-500 text-white hover:bg-cyan-600 active:text-white active:bg-cyan-500 rounded-full drop-shadow-lg transition-colors">My Reading List</button>
-      <p class="text-balance">View a list of the software, design and business related books I've enjoyed reading.</p>
+      <p class="text-balance">View a list of the software, design and business related books I've enjoyed reading. Note: This section is a WIP.</p>
+    </section>
+    <section id="hackathons" class="max-sm:text-left my-6 mx-6 md:mx-auto md:w-2/3">
+      <h3 class="text-2xl mb-4 font-medium">
+        Collaborative Coding
+      </h3>
+      <p class="mb-4 text-balance">
+        After talking with some friends about our desire for more in-person hackathons and other opportunities to practice collaborative development in Austin, TX, I decided to try creating some opportunities to do so on my own.
+      </p>
+      <p class="mb-4 text-balance">
+        The first of these so far was the "ACM Widgets Challenge" in April, 2024. I was given a conference room and 2 hours of time during the Austin Code Mentorship meetup that month. I wanted to get experience holding a hackathon-like event on a small scale, but knew I needed to optimize our time.
+      </p>
+      <div class="mb-4 text-center">
+        <div class="flex flex-col justify-center gap-4 lg:hidden">
+          <img class="mx-auto sm:px-8 rounded-sm" src="./img/photos/acm-experiment-1-54.jpg">
+          <img class="mx-auto sm:px-8 rounded-sm" src="./img/photos/acm-experiment-2-54.jpg">
+        </div>
+        <div class="flex justify-center gap-4 max-lg:hidden">
+          <img class="max-w-[25dvw] rounded-sm" src="./img/photos/acm-experiment-1-landscape.jpg">
+          <img class="max-w-[25dvw] rounded-sm" src="./img/photos/acm-experiment-2-landscape.jpg">
+        </div>
+        <small class="text-neutral-800">The ACM Widgets Challenge at Austin Code Mentorship</small>
+      </div>
+      <p class="mb-4 text-balance">
+        I built a web project where participants could group up and build small isolated web components, which could then be brought into one site with minimal friction. If you're curious what that looked like, read the <a class="link underline" href="https://github.com/me-julian/acm-widget-template" target="_blank">template repository's readme</a>.
+      </p>
+      <p class="mb-4 text-balance">
+        I gave a short presentation to set expectations and introduce them to the project before we quickly got on to building. I floated between teams helping explain how to interact with the template and with general development.
+      </p>
+      <p class="mb-4 text-balance">
+        I was able to observe the participants to get a better idea of what to expect from giving a timed coding problem to multiple groups and see the gaps in my preparation. Some not unexpected hiccups aside, I enjoyed helping the teams and seeing what they made. We had three widgets: an animated rotation of ACM-related QR codes, a form for adding ACM attendees to the database, and the cheeky team who bent the rules with a widget that actually created a separate widget for every attendee.
+      </p>
+      <p class="mb-4 text-balance">
+        I hope to be organizing a larger event in the near future!
+      </p>
     </section>
     <section id="personal"  class="max-sm:text-left my-6 mx-6 md:mx-auto md:w-2/3">
       <h3 class="text-2xl mb-4 font-medium">
@@ -298,8 +332,8 @@ appWrapper.innerHTML = /*html*/ `
         I also love to travel, and have independently planned and financed trips to Europe, Connecticut, Washington D.C. and New York since 2017. In my three European trips I've visited the Czech Republic and Poland, toured France and Croatia and spent plenty of quality time with my friends in the regional cities of the Netherlands - my favorite country.
       </p>
       <div class="mb-4 text-center">
-        <img class="mx-auto sm:px-8 lg:hidden rounded-sm" src="./img/julian-croatia-squarer.jpg">
-        <img class="mx-auto max-lg:hidden max-w-2xl rounded-sm" src="./img/julian-croatia-landscape.jpg">
+        <img class="mx-auto sm:px-8 lg:hidden rounded-sm" src="./img/photos/julian-croatia-54.jpg">
+        <img class="mx-auto max-lg:hidden max-w-2xl rounded-sm" src="./img/photos/julian-croatia-landscape.jpg">
         <small class="text-neutral-800">Poreč, Croatia near the <a class="link underline" href="https://en.wikipedia.org/wiki/Euphrasian_Basilica" target="_blank">Euphrasian Basilica</a></small>
       </div>
       <p class="mb-4 text-balance">
